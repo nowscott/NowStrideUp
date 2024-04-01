@@ -62,7 +62,7 @@ print(sorted_words)  # Output: ['apple', 'orange', 'banana', 'cherry']
 - 默认情况下，`sorted()` 函数按照元素的自然顺序进行排序，可以通过设置 `reverse=True` 实现降序排序。
 
 ## 区别
-`   sorted()` 函数和列表对象的 sort() 方法都用于对列表进行排序，但它们有一些重要的区别：
+`   sorted()` 函数和列表对象的 [[sort()]] 方法都用于对列表进行排序，但它们有一些重要的区别：
 
 1. **返回值：**
     
