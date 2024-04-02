@@ -1,8 +1,6 @@
 ---
 createDate: 2024-03-31 20:16:54
-editDate: 2024-04-02 17:17:31
-link: https://nowscott.notion.site/upper-d3a27fbe184244d0bd301246c1267e26
-notionID: d3a27fbe-1842-44d0-bd30-1246c1267e26
+editDate: 2024-04-02 17:30:42
 tags:
   - 方法
   - python
