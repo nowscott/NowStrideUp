@@ -1,10 +1,11 @@
 ---
-data: 2024-03-31T00:00:00.000Z
+createDate: 2024-03-31 8:20:44
+editDate: 2024-04-02 5:12:53
+link: https://nowscott.notion.site/sort-13b073adba31430793047c68d9e9cd0b
+notionID: 13b073ad-ba31-4307-9304-7c68d9e9cd0b
 tags:
   - 方法
   - python
-link: https://nowscott.notion.site/sort-13b073adba31430793047c68d9e9cd0b
-notionID: 13b073ad-ba31-4307-9304-7c68d9e9cd0b
 ---
 `sort()` 是 Python 中列表对象的一个方法，用于对列表中的元素进行排序。下面是对 `sort()` 方法的详细解释：
 

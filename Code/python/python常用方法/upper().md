@@ -1,10 +1,11 @@
 ---
-data: 2023-03-31T00:00:00.000Z
+createDate: 2024-03-31 8:16:54
+editDate: 2024-04-02 5:12:46
+link: https://nowscott.notion.site/upper-d3a27fbe184244d0bd301246c1267e26
+notionID: d3a27fbe-1842-44d0-bd30-1246c1267e26
 tags:
   - 方法
   - python
-link: https://nowscott.notion.site/upper-d3a27fbe184244d0bd301246c1267e26
-notionID: d3a27fbe-1842-44d0-bd30-1246c1267e26
 ---
 `upper()` 是 Python 字符串对象的一个内置方法，用于将字符串中的所有小写字母转换为大写字母，并返回转换后的字符串副本。下面是对 `upper()` 方法的详细解释：
 
