@@ -23,7 +23,6 @@ tags:
 如字符 'C'，代表的十进制是 12 ，其二进制为 1100 ，则翻转后为 0011，也就是3。转换后的字符是 '3'。
 根据这个转换规则，由第二步生成的字符串 “abcedf” 转换后会生成字符串 "5D37BF"。
 
-
 **数据范围：** 输入的字符串长度满足 1≤n≤100 
 
 **输入描述：**
@@ -31,4 +30,47 @@ tags:
 
 **输出描述：**
 输出转化后的结果。
+
+Answer
+```python
+def trans(c):
+    # 将十六进制字符转换为反转后的大写十六进制字符
+    binary_num = bin(int(c, 16))[2:].zfill(4)  # 将十六进制数转换为二进制数
+    reversed_binary = binary_num[::-1]  # 反转二进制数
+    hexadecimal_str = hex(int(reversed_binary, 2))[2:].upper()  # 将反转后的二进制数转换为十六进制字符串
+    return hexadecimal_str
+
+def sort_odd_even(s):
+    # 对字符串中的奇数位和偶数位字符分别进行排序并按照原顺序组合成新字符串
+    odd_chars = []  # 存放奇数位字符
+    even_chars = []  # 存放偶数位字符
+    for i in range(len(s)):
+        if i % 2 == 0:  # 偶数位
+            even_chars.append(s[i])
+        else:  # 奇数位
+            odd_chars.append(s[i])
+    # 对奇数位和偶数位字符分别进行排序
+    sorted_odd_chars = sorted(odd_chars)
+    sorted_even_chars = sorted(even_chars)
+    # 将排序后的字符按照原始顺序依次放回到原始字符串的对应位置中
+    new_s = ''
+    for i in range(len(s)):
+        if i % 2 == 0:  # 偶数位
+            new_s += sorted_even_chars.pop(0)
+        else:  # 奇数位
+            new_s += sorted_odd_chars.pop(0)
+    return new_s
+
+trans_list = '0123456789ABCDEFabcdef'  # 包含十六进制字符的字符串
+input_list = input().split()  # 输入以空格分隔的字符串列表
+input_str = ''.join([item for item in input_list])  # 将输入列表中的字符串连接为一个字符串
+sorted_str = sort_odd_even(input_str)  # 对输入字符串的奇数位和偶数位字符分别排序并按照原顺序组合成新字符串
+res = ''
+for i in sorted_str:
+    if i in trans_list:  # 如果字符是十六进制字符，则进行转换
+        res += trans(i)
+    else:  # 否则直接添加到结果字符串中
+        res += i
+print(res)  # 输出结果字符串
+```
 
