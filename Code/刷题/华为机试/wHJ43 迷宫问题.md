@@ -18,10 +18,41 @@ int maze[5][5] = {
 0, 0, 0, 1, 0,
 };
 ```
-
 它表示一个迷宫，其中的1表示墙壁，0表示可以走的路，只能横着走或竖着走，不能斜着走，要求编程序找出从左上角到右下角的路线。入口点为\[0,0],既第一格是可以走的路。
 数据范围： $2≤n,m≤10$  ，输入的内容只包含 $0≤val≤1$ 
 ### 输入描述：
 输入两个整数，分别表示二维数组的行数，列数。再输入相应的数组，其中的1表示墙壁，0表示可以走的路。数据保证有唯一解,不考虑有多解的情况，即迷宫只有一条通道。
 ### 输出描述：
 左上角到右下角的最短路径，格式如样例所示。
+### 解释：
+如下解法仅限本题，注意其中都是if，而不是if—else，就是当
+### answer
+```python
+def findway(x, y, path):
+    # 如果当前位置是终点，则打印路径
+    if x == m - 1 and y == n - 1:
+        [print(f'({l[0]},{l[1]})') for l in path]
+    # 向右移动
+    if x + 1 <= m - 1 and (x + 1, y) not in path and maze[x + 1][y] == '0':
+        findway(x + 1, y, path + [(x + 1, y)])
+    # 向下移动
+    if y + 1 <= n - 1 and (x, y + 1) not in path and maze[x][y + 1] == '0':
+        findway(x, y + 1, path + [(x, y + 1)])
+    # 向左移动
+    if x - 1 >= 0 and (x - 1, y) not in path and maze[x - 1][y] == '0':
+        findway(x - 1, y, path + [(x - 1, y)])
+    # 向上移动
+    if y - 1 >= 0 and (x, y - 1) not in path and maze[x][y - 1] == '0':
+        findway(x, y - 1, path + [(x, y - 1)])
+# 循环直到出现异常
+while 1:
+    try:
+        # 输入迷宫的行数和列数
+        m, n = map(int, input().split())
+        # 输入迷宫的内容
+        maze = [input().split() for _ in range(m)]
+        # 从起点 (0,0) 开始寻找路径
+        findway(0, 0, [(0, 0)])
+    except:
+        break
+```
