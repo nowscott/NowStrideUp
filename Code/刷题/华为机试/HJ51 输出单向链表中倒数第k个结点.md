@@ -41,3 +41,6 @@ while True:
 ```
 ### answer2
 链表做法
+```python
+
+```
