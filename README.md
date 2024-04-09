@@ -20,6 +20,7 @@ createDate: 2024-04-01 12:02:53
       - [wHJ18 识别有效的IP地址和掩码并进行分类统计.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ18%20%E8%AF%86%E5%88%AB%E6%9C%89%E6%95%88%E7%9A%84IP%E5%9C%B0%E5%9D%80%E5%92%8C%E6%8E%A9%E7%A0%81%E5%B9%B6%E8%BF%9B%E8%A1%8C%E5%88%86%E7%B1%BB%E7%BB%9F%E8%AE%A1.md)
       - [wHJ16 购物单.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ16%20%E8%B4%AD%E7%89%A9%E5%8D%95.md)
       - [HJ99 自守数.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ99%20%E8%87%AA%E5%AE%88%E6%95%B0.md)
+      - [HJ57 高精度整数加法.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ57%20%E9%AB%98%E7%B2%BE%E5%BA%A6%E6%95%B4%E6%95%B0%E5%8A%A0%E6%B3%95.md)
       - [HJ56 完全数计算.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ56%20%E5%AE%8C%E5%85%A8%E6%95%B0%E8%AE%A1%E7%AE%97.md)
       - [HJ55 挑7.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ55%20%E6%8C%917.md)
       - [HJ54 表达式求值.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ54%20%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B1%82%E5%80%BC.md)
@@ -93,9 +94,7 @@ createDate: 2024-04-01 12:02:53
       - [基本语法.md](Code/python/python%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.md)
       - [基本数据类型.md](Code/python/python%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.md)
     - [replace().md](Code/python/replace%28%29.md)
-  - [nextjs](Code/nextjs)/
   - [javascript](Code/javascript)/
-    - [js入门](Code/javascript/js%E5%85%A5%E9%97%A8)/
     - [js入门.md](Code/javascript/js%E5%85%A5%E9%97%A8.md)
 - [Articles](Articles)/
   - [04使用快捷指令更改mac输出音频设备.md](Articles/04%E4%BD%BF%E7%94%A8%E5%BF%AB%E6%8D%B7%E6%8C%87%E4%BB%A4%E6%9B%B4%E6%94%B9mac%E8%BE%93%E5%87%BA%E9%9F%B3%E9%A2%91%E8%AE%BE%E5%A4%87.md)
