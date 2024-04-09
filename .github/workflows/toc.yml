@@ -28,5 +28,7 @@ jobs:
 
     - name: Commit and push changes to README.md
       run: |
-        git add "README.md"
+        $filename = "README.md"
+        git add $filename
+        cat $filename
         git diff --quiet --exit-code || git commit -m "Update README.md by GitHub Action" && git push
