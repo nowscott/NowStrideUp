@@ -37,8 +37,13 @@ ignored_folders = {'.github', 'Temp', '.git','.obsidian'}
 ignored_files = {'toc.py', '.DS_Store', 'README.md', '.gitignore'}
 
 # 读取README.md文件内容
-with open('README.md', 'r') as readme_file:
-    readme_content = readme_file.read()
+try:
+    with open('README.md', 'r') as readme_file:
+        readme_content = readme_file.read()
+    print("成功打开 README.md 文件")
+except FileNotFoundError:
+    print("找不到 README.md 文件")
+    raise
 
 # 找到目录列表的开始和结束位置
 start_index = readme_content.find("### 目录")
@@ -51,5 +56,10 @@ directory_tree = generate_directory_tree(current_directory, ignored_folders=igno
 updated_readme_content = readme_content[:start_index + len("### 目录") + 1] + "\n" + directory_tree + readme_content[end_index:]
 
 # 将更新后的内容写回README.md文件
-with open('README.md', 'w') as readme_file:
-    readme_file.write(updated_readme_content)
+try:
+    with open('README.md', 'w') as readme_file:
+        readme_file.write(updated_readme_content)
+    print("成功写入更新到 README.md 文件")
+except Exception as e:
+    print("写入更新到 README.md 文件时出错:", e)
+    raise
