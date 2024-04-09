@@ -1,0 +1,22 @@
+name: Update Directory Tree
+
+on:
+  push:
+    branches:
+      - main  # 替换为你的默认分支
+
+jobs:
+  update_directory_tree:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Run toc.py
+      run: python toc.py
