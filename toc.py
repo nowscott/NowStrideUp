@@ -40,7 +40,6 @@ ignored_files = {'toc.py', '.DS_Store', 'README.md', '.gitignore'}
 try:
     with open('README.md', 'r') as readme_file:
         readme_content = readme_file.read()
-        print(readme_content)
     print("成功打开 README.md 文件")
 except FileNotFoundError:
     print("找不到 README.md 文件")
