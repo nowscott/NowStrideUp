@@ -1,4 +1,4 @@
-name: Update Directory Tree
+name: Update Toc
 
 on:
   workflow_dispatch:
