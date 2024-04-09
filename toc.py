@@ -54,7 +54,7 @@ directory_tree = generate_directory_tree(current_directory, ignored_folders=igno
 
 # 更新README.md文件内容
 updated_readme_content = readme_content[:start_index + len("### 目录") + 1] + "\n" + directory_tree + readme_content[end_index:]
-
+print(updated_readme_content)
 # 将更新后的内容写回README.md文件
 try:
     with open('README.md', 'w') as readme_file:
