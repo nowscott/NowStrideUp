@@ -28,8 +28,5 @@ jobs:
 
     - name: Commit and push changes to README.md
       run: |
-        git add README.md
-        cat README.md
+        git add "README.md"
         git diff --quiet --exit-code || git commit -m "Update README.md by GitHub Action" && git push
-      # env:
-      #   GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
