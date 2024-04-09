@@ -29,7 +29,6 @@ jobs:
     - name: Commit and push changes to README.md
       run: |
         filename="README.md"
-        cat $filename
         if ! git diff --quiet --exit-code; then
           git add $filename
           git commit -m "Update Toc"
