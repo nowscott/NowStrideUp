@@ -1,21 +1,33 @@
 name: Update Directory Tree
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *"  # 每天的 0 点执行
 
 jobs:
   update_directory_tree:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Set up Git
+      run: |
+        git config --global user.name "NowScott"
+        git config --global user.email "nowscott@qq.com"
+        git remote set-url origin https://${{ github.actor }}:${{ secrets.ACCESS_TOKEN }}@github.com/${{ github.repository }}
+
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v3
       with:
         python-version: '3.x'
 
     - name: Run toc.py
       run: python toc.py
+
+    - name: Commit and push changes to README.md
+      run: |
+        git add README.md
+        git diff --quiet --exit-code || git commit -m "Update README.md by GitHub Action" && git push
