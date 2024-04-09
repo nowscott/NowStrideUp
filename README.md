@@ -5,11 +5,11 @@ createDate: 2024-04-09 23:16:28
 
 ### 目录
 
-- [Code](Code)/
-  - [数据结构与算法](Code/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95)/
+- Code
+  - 数据结构与算法
     - [动态规划.md](Code/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92.md)
-  - [刷题](Code/%E5%88%B7%E9%A2%98)/
-    - [华为机试](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95)/
+  - 刷题
+    - 华为机试
       - [wHJ52 计算字符串的编辑距离.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ52%20%E8%AE%A1%E7%AE%97%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB.md)
       - [wHJ51 输出单向链表中倒数第k个结点.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ51%20%E8%BE%93%E5%87%BA%E5%8D%95%E5%90%91%E9%93%BE%E8%A1%A8%E4%B8%AD%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E7%BB%93%E7%82%B9.md)
       - [wHJ50 四则运算.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ50%20%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97.md)
@@ -65,15 +65,15 @@ createDate: 2024-04-09 23:16:28
       - [HJ3 明明的随机数.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ3%20%E6%98%8E%E6%98%8E%E7%9A%84%E9%9A%8F%E6%9C%BA%E6%95%B0.md)
       - [HJ2 计算某字符出现次数.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ2%20%E8%AE%A1%E7%AE%97%E6%9F%90%E5%AD%97%E7%AC%A6%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0.md)
       - [HJ1 字符串最后一个单词的长度.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ1%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E5%8D%95%E8%AF%8D%E7%9A%84%E9%95%BF%E5%BA%A6.md)
-    - [leetcode](Code/%E5%88%B7%E9%A2%98/leetcode)/
+    - leetcode
       - [5. 最长回文子串.md](Code/%E5%88%B7%E9%A2%98/leetcode/5.%20%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2.md)
-  - [python](Code/python)/
-    - [python模块](Code/python/python%E6%A8%A1%E5%9D%97)/
+  - python
+    - python模块
       - [sys.md](Code/python/python%E6%A8%A1%E5%9D%97/sys.md)
       - [re.md](Code/python/python%E6%A8%A1%E5%9D%97/re.md)
       - [random.md](Code/python/python%E6%A8%A1%E5%9D%97/random.md)
       - [math.md](Code/python/python%E6%A8%A1%E5%9D%97/math.md)
-    - [python常用方法](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95)/
+    - python常用方法
       - [upper().md](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/upper%28%29.md)
       - [str().md](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/str%28%29.md)
       - [split().md](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/split%28%29.md)
@@ -92,13 +92,15 @@ createDate: 2024-04-09 23:16:28
       - [chr().md](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/chr%28%29.md)
       - [bin().md](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/bin%28%29.md)
       - [append().md](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/append%28%29.md)
-    - [python入门教程](Code/python/python%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B)/
+    - python入门教程
       - [基本语法.md](Code/python/python%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.md)
       - [基本数据类型.md](Code/python/python%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.md)
     - [replace().md](Code/python/replace%28%29.md)
-  - [javascript](Code/javascript)/
+  - nextjs
+  - javascript
+    - js入门
     - [js入门.md](Code/javascript/js%E5%85%A5%E9%97%A8.md)
-- [Articles](Articles)/
+- Articles
   - [04使用快捷指令更改mac输出音频设备.md](Articles/04%E4%BD%BF%E7%94%A8%E5%BF%AB%E6%8D%B7%E6%8C%87%E4%BB%A4%E6%9B%B4%E6%94%B9mac%E8%BE%93%E5%87%BA%E9%9F%B3%E9%A2%91%E8%AE%BE%E5%A4%87.md)
   - [03Badge制作指北——手把手教你制作Badge.md](Articles/03Badge%E5%88%B6%E4%BD%9C%E6%8C%87%E5%8C%97%E2%80%94%E2%80%94%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%88%B6%E4%BD%9CBadge.md)
   - [02教你做一个每天发送科技新闻邮件的工具.md](Articles/02%E6%95%99%E4%BD%A0%E5%81%9A%E4%B8%80%E4%B8%AA%E6%AF%8F%E5%A4%A9%E5%8F%91%E9%80%81%E7%A7%91%E6%8A%80%E6%96%B0%E9%97%BB%E9%82%AE%E4%BB%B6%E7%9A%84%E5%B7%A5%E5%85%B7.md)

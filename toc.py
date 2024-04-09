@@ -17,11 +17,9 @@ def generate_directory_tree(directory, depth=0, ignored_folders=set(), ignored_f
     
     for d in directories:
         if d not in ignored_folders:
-            relative_path = os.path.relpath(os.path.join(directory, d), base_path)
-            relative_path = urllib.parse.quote(relative_path)  # 将路径中的空格转换为%20
-            tree += "  " * depth + "- [{}]({})/\n".format(d, relative_path)
+            tree += "  " * depth + "- {}\n".format(d)
             tree += generate_directory_tree(os.path.join(directory, d), depth + 1, ignored_folders, ignored_files, base_path)
-    
+                
     for f in files:
         relative_path = os.path.relpath(os.path.join(directory, f), base_path)
         relative_path = urllib.parse.quote(relative_path)  # 将路径中的空格转换为%20
