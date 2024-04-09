@@ -14,8 +14,8 @@ jobs:
       run: |
         git config --global user.name "NowScott"
         git config --global user.email "nowscott@qq.com"
-        git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-        cd /path/to/your/repository
+        git clone https://github.com/nowscott/NowStrideUp.git
+        # git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
     - name: Checkout repository
       uses: actions/checkout@v3
 
