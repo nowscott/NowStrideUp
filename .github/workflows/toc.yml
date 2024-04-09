@@ -31,5 +31,11 @@ jobs:
         filename="README.md"
         git add $filename
         cat $filename
-        git diff --quiet --exit-code || git commit -m "Update README.md by GitHub Action" && git push
+        if ! git diff --quiet --exit-code; then
+          git add $filename
+          git commit -m "Update Toc"
+          git push
+        else
+          echo "没有变化。"
+        fi
 
