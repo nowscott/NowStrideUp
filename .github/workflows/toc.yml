@@ -29,7 +29,6 @@ jobs:
     - name: Commit and push changes to README.md
       run: |
         filename="README.md"
-        git add $filename
         cat $filename
         if ! git diff --quiet --exit-code; then
           git add $filename
@@ -38,4 +37,3 @@ jobs:
         else
           echo "没有变化。"
         fi
-
