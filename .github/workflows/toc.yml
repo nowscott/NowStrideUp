@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main  # 替换为你的默认分支
+  schedule:
+    - cron: '0 0 * * *'  # 每天的 0 点执行
 
 jobs:
   update_directory_tree:
