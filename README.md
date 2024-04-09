@@ -1,12 +1,16 @@
 ---
 createDate: 2024-04-09 23:16:28
 ---
+
+[![Update Toc](https://github.com/nowscott/NowStrideUp/actions/workflows/toc.yml/badge.svg)](https://github.com/nowscott/NowStrideUp/actions/workflows/toc.yml)
+
 ### 这是一个备份笔记的仓库
+
 下面是一个自动生成的目录，每天生成一次。
+
 生成目录不会删掉本文件中的所有内容，而是打开本文件获取到目录和结束的三级标题，删掉其中的内容，插入新的目录。
 
 ### 目录
-
 - Code
   - 数据结构与算法
     - [动态规划.md](Code/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92.md)
