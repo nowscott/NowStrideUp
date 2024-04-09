@@ -40,6 +40,7 @@ ignored_files = {'toc.py', '.DS_Store', 'README.md', '.gitignore'}
 try:
     with open('README.md', 'r') as readme_file:
         readme_content = readme_file.read()
+        print(readme_content)
     print("成功打开 README.md 文件")
 except FileNotFoundError:
     print("找不到 README.md 文件")
@@ -59,7 +60,6 @@ print(updated_readme_content)
 try:
     with open('README.md', 'w') as readme_file:
         readme_file.write(updated_readme_content)
-    print("成功写入更新到 README.md 文件")
 except Exception as e:
     print("写入更新到 README.md 文件时出错:", e)
     raise
