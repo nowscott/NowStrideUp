@@ -1,8 +1,5 @@
 name: Update Directory Tree
 on:
-  push:
-    branches:
-      - main  # 替换为你的默认分支
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
