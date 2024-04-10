@@ -16,7 +16,7 @@ jobs:
         git config --global user.email "nowscott@qq.com"
         git clone https://github.com/nowscott/NowStrideUp.git
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Python
       uses: actions/setup-python@v4

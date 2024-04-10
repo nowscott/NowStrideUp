@@ -11,6 +11,7 @@ createDate: 2024-04-09 23:16:28
 生成目录不会删掉本文件中的所有内容，而是打开本文件获取到目录和结束的三级标题，删掉其中的内容，插入新的目录。
 
 ### 目录
+
 - Code
   - 数据结构与算法
     - [动态规划.md](Code/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92.md)
@@ -102,9 +103,7 @@ createDate: 2024-04-09 23:16:28
       - [基本语法.md](Code/python/python%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.md)
       - [基本数据类型.md](Code/python/python%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.md)
     - [replace().md](Code/python/replace%28%29.md)
-  - nextjs
   - javascript
-    - js入门
     - [js入门.md](Code/javascript/js%E5%85%A5%E9%97%A8.md)
 - Articles
   - [04使用快捷指令更改mac输出音频设备.md](Articles/04%E4%BD%BF%E7%94%A8%E5%BF%AB%E6%8D%B7%E6%8C%87%E4%BB%A4%E6%9B%B4%E6%94%B9mac%E8%BE%93%E5%87%BA%E9%9F%B3%E9%A2%91%E8%AE%BE%E5%A4%87.md)
