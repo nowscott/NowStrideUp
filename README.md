@@ -103,7 +103,7 @@ createDate: 2024-04-11 11:24
     - python入门教程
       - [基本语法.md](Code/python/python%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.md)
       - [基本数据类型.md](Code/python/python%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.md)
-    - [replace().md](Code/python/replace%28%29.md)
+    - [replace().md](replace().md)
   - javascript
     - [js入门.md](Code/javascript/js%E5%85%A5%E9%97%A8.md)
 - Articles
