@@ -65,3 +65,22 @@ yang 50
 ning 70
 fang 90
 ```
+## 高手代码
+```python
+while 1:
+    try:
+        n = int(input())
+        if input() == "0":
+            flag = True
+        else:
+            flag = False
+        ls = []
+        for i in range(n):
+            name,score = input().split()
+            ls.append((name,int(score)))
+            ls.sort(key=lambda x:x[1], reverse = flag )
+        for x in ls:
+            print(*x)
+    except:
+        break
+```

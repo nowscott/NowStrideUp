@@ -97,6 +97,26 @@ $$
 905 1342 766 715 1028 956 749
 ```
 ## 高手代码
-```pythhon
-
+```python
+while True:
+    try:
+        n=int(input())
+        m=int(input())
+        s=int(input())
+        firstArray=[]
+        secondArray=[]
+        for i in range(n):
+            firstArray.append(list(map(int, input().split())))
+        for j in range(m):
+            secondArray.append(list(map(int, input().split())))
+        res=[[0 for i in range(s)] for j in range(n)] # 答案数组 n*s
+        for i in range(n):
+            for j in range(s):
+                for x in range(m):
+                    res[i][j]+=firstArray[i][x]*secondArray[x][j]
+        for e in res:
+            # print(' '.join(e)) 这里竟然卡了两三次 int忘记转换成str
+            print(' '.join(list(map(str, e))))
+    except:
+        break
 ```
