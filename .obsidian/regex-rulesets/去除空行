@@ -1,0 +1,2 @@
+"^\s*$\n"gm->"empty"x
+" +$"gm->"empty"x

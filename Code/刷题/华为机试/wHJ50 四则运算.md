@@ -1,11 +1,6 @@
 ---
-createDate: 2024-04-08 13:02:07
-tags:
-  - 刷题
-  - python
-  - 字符串
-  - 栈
-  - 基础数学
+createDate: 2024-04-11 11:24
+tags: [基础数学, 刷题, 栈, 字符串, python]
 ---
 ## 描述
 
@@ -25,6 +20,14 @@ tags:
 
 得到计算结果
 
+## 示例
+```0
+输入：
+3+2*{1+2*[-4/(8-6)+7]}
+输出：
+25
+```
+
 ### answer1
 
 使用[[eval()]]函数
@@ -43,4 +46,38 @@ print(result)
 
 ```python
 
+```
+
+## 高手答案
+
+```python
+st = input().replace('[','(').replace(']',')').replace('{','(').replace('}',')')
+def func(i):
+    nums = []
+    flag = None
+    while i < len(st):
+        num = 0
+        if st[i] == '(':
+            i, num = func(i+1)
+        if flag == ')': 
+            return i, sum(nums)
+        
+        while i < len(st) and st[i].isdigit():
+            num = num*10 + int(st[i])
+            i += 1
+        if not nums: 
+            nums.append(num) 
+        if flag == '+':
+            nums.append(num)
+        elif flag == '-':
+            nums.append(-num)
+        elif flag == '*':
+            nums.append(nums.pop()*num)
+        elif flag == '/':
+            nums.append(nums.pop()//num)        
+        if i < len(st): flag = st[i] 
+        i += 1
+    return i, sum(nums)
+        
+print(func(0)[1])
 ```

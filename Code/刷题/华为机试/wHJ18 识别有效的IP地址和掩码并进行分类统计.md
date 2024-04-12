@@ -1,8 +1,6 @@
 ---
-createDate: 2024-04-05 16:36:40
-tags:
-  - 刷题
-  - python
+createDate: 2024-04-11 11:24
+tags: [刷题, python]
 ---
 ## 描述
 

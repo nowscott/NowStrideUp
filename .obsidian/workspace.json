@@ -1,0 +1,186 @@
+{
+  "main": {
+    "id": "3809a6a1c2702ffa",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b011aaae8007c7d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "643517d9b81d85fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Code/刷题/华为机试/wHJ16 购物单.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "994c41f0dc07c207",
+    "type": "split",
+    "children": [
+      {
+        "id": "b5678285f232e783",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f7876103c811d8b8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabeticalReverse"
+              }
+            }
+          },
+          {
+            "id": "1d75fcdc91bad63a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c9f219206fb16b5e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "183197d60ba6a2a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "df4023470be03472",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0061e31b0ebff776",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Code/刷题/华为机试/wHJ16 购物单.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8fc7b9ec6abc50ae",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Code/刷题/华为机试/wHJ16 购物单.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8ffc5e16c93d357e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e0310e99f9ba2c0d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Code/刷题/华为机试/wHJ16 购物单.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": true,
+      "graph:查看关系图谱": false,
+      "templates:插入模板": false,
+      "canvas:新建白板": true,
+      "daily-notes:打开/创建今天的日记": true,
+      "command-palette:打开命令面板": true,
+      "obsidian-regex-pipeline:Regex Rulesets": true
+    }
+  },
+  "active": "643517d9b81d85fd",
+  "lastOpenFiles": [
+    "Code/刷题/华为机试/wHJ18 识别有效的IP地址和掩码并进行分类统计.md",
+    "Code/刷题/华为机试/wHJ24 合唱队.md",
+    "Code/刷题/华为机试/wHJ28 素数伴侣.md",
+    "Code/刷题/华为机试/wHJ32 密码截取.md",
+    "Code/刷题/华为机试/wHJ39 判断两个IP是否属于同一子网.md",
+    "Code/刷题/华为机试/wHJ42 学英语.md",
+    "Code/刷题/华为机试/wHJ44 Sudoku.md",
+    "Code/刷题/华为机试/wHJ50 四则运算.md",
+    "Code/刷题/华为机试/wHJ51 输出单向链表中倒数第k个结点.md",
+    "Code/刷题/华为机试/wHJ57 高精度整数加法.md",
+    "Code/刷题/华为机试/wHJ52 计算字符串的编辑距离.md",
+    "Code/刷题/华为机试/wHJ16 购物单.md",
+    "Articles/03Badge制作指北——手把手教你制作Badge.md",
+    "Articles/01构建一个自己的索引网站.md",
+    "Code/刷题/华为机试/asset/HJ44 数独输出.png",
+    "Code/刷题/华为机试/asset/HJ44 数独输入.png",
+    "Code/刷题/华为机试/xHJ60 查找组成一个偶数最接近的两个素数.md",
+    "Code/刷题/华为机试/xHJ61 放苹果.md",
+    "Code/刷题/华为机试/xHJ62 查找输入整数二进制中1的个数.md",
+    "Code/刷题/华为机试/xHJ63 DNA序列.md",
+    "Code/刷题/华为机试/xHJ64 MP3光标位置.md",
+    "Code/刷题/华为机试/xHJ65 查找两个字符串a,b中的最长公共子串.md",
+    "Code/刷题/华为机试/xHJ66 配置文件恢复.md",
+    "Code/刷题/华为机试/xHJ67 24点游戏算法.md",
+    "Code/刷题/华为机试/xHJ68 成绩排序.md",
+    "Code/刷题/华为机试/xHJ69 矩阵乘法.md",
+    "Code/刷题/华为机试/xHJ70 矩阵乘法计算量估算.md",
+    "Code/刷题/华为机试/asset/HJ66 描述图片.png",
+    "README.md",
+    "Code/刷题/华为机试/asset/HJ64 描述图片.png",
+    "Code/刷题/华为机试/asset",
+    "Pasted image 20240412122434.png"
+  ]
+}
