@@ -46,4 +46,92 @@ E类地址从240.0.0.0到255.255.255.255
 
 统计A、B、C、D、E、错误IP地址或错误掩码、私有IP的个数，之间以空格隔开。
 
-### Answer
+## 示例
+```0
+输入：
+10.70.44.68~255.254.255.0
+1.0.0.1~255.0.0.0
+192.168.0.2~255.255.255.0
+19..0.~255.255.255.0
+输出：
+1 0 1 0 0 2 1
+说明：
+10.70.44.68~255.254.255.0的子网掩码非法，19..0.~255.255.255.0的IP地址非法，所以错误IP地址或错误掩码的计数为2；
+1.0.0.1~255.0.0.0是无误的A类地址；
+192.168.0.2~255.255.255.0是无误的C类地址且是私有IP；
+所以最终的结果为1 0 1 0 0 2 1
+---------------
+输入：
+0.201.56.50~255.255.111.255
+127.201.56.50~255.255.111.255
+输出：
+0 0 0 0 0 0 0
+说明：
+类似于【0.*.*.*】和【127.*.*.*】的IP地址不属于上述输入的任意一类，也不属于不合法ip地址，计数时请忽略
+```
+
+## 高手代码
+
+```python
+import sys
+
+res = [0,0,0,0,0,0,0]
+
+def puip(ip):
+    if 1 <= ip[0] <= 126:				# A类地址判断条件
+        res[0] += 1
+    elif 128 <= ip[0] <= 191:			# B类地址判断条件
+        res[1] += 1
+    elif 192 <= ip[0] <= 223:			# C类地址判断条件
+        res[2] += 1
+    elif 224 <= ip[0] <= 239:			# D类地址判断条件
+        res[3] += 1
+    elif 240 <= ip[0] <= 255:			# E类地址判断条件
+        res[4] += 1
+    return
+
+def prip(ip):			# 私有IP地址判断条件
+    if (ip[0] == 10) or (ip[0] == 172 and 16 <= ip[1] <= 32) or (ip[0] == 192 and ip[1] == 168):
+        res[6] += 1
+    return
+
+def ym(msk):			# 判断掩码合法性
+    val = (msk[0] << 24) + (msk[1] << 16) + (msk[2] << 8) + msk[3]		# 转换成32位
+    if val == 0:														  # 排除全0的情况
+        return False
+    if (val+1) == (1<<32):												# 排除全1的情况
+        return False
+    flag = 0
+    while(val):
+        digit = val & 1													# 逐位判断
+        if digit == 1:
+            flag = 1
+        if flag == 1 and digit == 0:									# flag=1表示已经不允许再出现0
+            return False
+        val >>= 1
+    return True
+    
+
+def judge(line):
+    ip, msk = line.strip().split('~')
+    ips = [int(x) for x in filter(None, ip.split('.'))]				# 获得表示IP的列表，理论上应该包含四个元素
+    msks = [int(x) for x in filter(None, msk.split('.'))]			# 获得表示掩码的列表，理论上应该包含四个元素
+    if ips[0] == 0 or ips[0] == 127:								# 排除非法IP不计数
+        return
+    if len(ips) < 4 or len(msks) < 4:								  # 判断错误掩码或错误IP
+        res[5] += 1
+        return
+    if ym(msks) == True:											# 通过掩码判断的可以进行IP判断
+        puip(ips)
+        prip(ips)
+    else:
+        res[5] += 1
+    return
+
+for line in sys.stdin:
+    judge(line)
+# judge("192.168.0.2~255.255.255.0")
+
+res = [str(x) for x in res]
+print(" ".join(res))
+```
