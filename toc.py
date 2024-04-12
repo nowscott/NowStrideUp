@@ -32,7 +32,7 @@ ignored_files = {'toc.py', '.DS_Store', 'README.md', '.gitignore'}
 
 # 读取README.md文件内容
 try:
-    with open('README.md', 'r') as readme_file:
+    with open('README.md', 'r',encoding='utf-8') as readme_file:
         readme_content = readme_file.read()
     print("成功打开 README.md 文件")
 except FileNotFoundError:
@@ -50,7 +50,7 @@ directory_tree = generate_directory_tree(current_directory, ignored_folders=igno
 updated_readme_content = readme_content[:start_index + len("### 目录") + 1] + "\n" + directory_tree + readme_content[end_index:]
 # 将更新后的内容写回README.md文件
 try:
-    with open('README.md', 'w') as readme_file:
+    with open('README.md', 'w',encoding='utf-8') as readme_file:
         readme_file.write(updated_readme_content)
 except Exception as e:
     print("写入更新到 README.md 文件时出错:", e)

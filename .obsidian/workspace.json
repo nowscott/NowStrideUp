@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/刷题/华为机试/wHJ16 购物单.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/刷题/华为机试/wHJ16 购物单.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/刷题/华为机试/wHJ16 购物单.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/刷题/华为机试/wHJ16 购物单.md"
+                "file": "README.md"
               }
             }
           }
@@ -150,6 +150,7 @@
   },
   "active": "643517d9b81d85fd",
   "lastOpenFiles": [
+    "Code/刷题/华为机试/wHJ16 购物单.md",
     "Code/刷题/华为机试/wHJ18 识别有效的IP地址和掩码并进行分类统计.md",
     "Code/刷题/华为机试/wHJ24 合唱队.md",
     "Code/刷题/华为机试/wHJ28 素数伴侣.md",
@@ -161,7 +162,6 @@
     "Code/刷题/华为机试/wHJ51 输出单向链表中倒数第k个结点.md",
     "Code/刷题/华为机试/wHJ57 高精度整数加法.md",
     "Code/刷题/华为机试/wHJ52 计算字符串的编辑距离.md",
-    "Code/刷题/华为机试/wHJ16 购物单.md",
     "Articles/03Badge制作指北——手把手教你制作Badge.md",
     "Articles/01构建一个自己的索引网站.md",
     "Code/刷题/华为机试/asset/HJ44 数独输出.png",
