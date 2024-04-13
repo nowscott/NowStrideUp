@@ -1,17 +1,12 @@
 ---
 createDate: 2024-04-12 11:47
-tags:
-  - 刷题
-  - python
-  - 查找
-  - 基础数学
-  - 穷举
+tags: [查找, 基础数学, 穷举, 刷题, python]
 ---
 ## 描述
 
 任意一个偶数（大于2）都可以由2个素数组成，组成偶数的2个素数有很多种情况，本题目要求输出组成指定偶数的两个素数差值最小的素数对。
 
-数据范围：输入的数据满足$4≤n≤1000$ 
+数据范围：输入的数据满足$4≤n≤1000$
 
 ### 输入描述：
 
@@ -34,6 +29,25 @@ tags:
 输出：
 2
 2
+```
+## 我的代码
+```python
+def isprime(n):
+    if n == 1:
+        return 1
+    for i in range(2,n):
+        if n%i==0:
+            return 0
+    return 1
+n = int(input(""))
+wid = n//2
+res = 1
+for i in range(n//2+1):
+    if isprime(i) and isprime(n-i):
+        wid = n-2*i
+        res = i
+print(res)
+print(n-res)
 ```
 ## 高手代码
 ```python
