@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/刷题/华为机试/xHJ61 放苹果.md",
+                "file": "Code/刷题/华为机试/xHJ68 成绩排序.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "二进制",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/刷题/华为机试/xHJ61 放苹果.md",
+                "file": "Code/刷题/华为机试/xHJ68 成绩排序.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/刷题/华为机试/xHJ61 放苹果.md",
+                "file": "Code/刷题/华为机试/xHJ68 成绩排序.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/刷题/华为机试/xHJ61 放苹果.md"
+                "file": "Code/刷题/华为机试/xHJ68 成绩排序.md"
               }
             }
           }
@@ -150,7 +150,12 @@
   },
   "active": "643517d9b81d85fd",
   "lastOpenFiles": [
-    "Code/刷题/华为机试/xHJ60 查找组成一个偶数最接近的两个素数.md",
+    "Code/刷题/华为机试/xHJ67 24点游戏算法.md",
+    "Code/刷题/华为机试/zHJ62 查找输入整数二进制中1的个数.md",
+    "Code/刷题/华为机试/xHJ63 DNA序列.md",
+    "Code/刷题/华为机试/zHJ60 查找组成一个偶数最接近的两个素数.md",
+    "Code/python/python常用方法/bin().md",
+    "Code/刷题/华为机试/xHJ61 放苹果.md",
     "Code/刷题/华为机试/xHJ70 矩阵乘法计算量估算.md",
     "Code/数据结构与算法/动态规划.md",
     "README.md",
@@ -170,14 +175,9 @@
     "Articles/01构建一个自己的索引网站.md",
     "Code/刷题/华为机试/asset/HJ44 数独输出.png",
     "Code/刷题/华为机试/asset/HJ44 数独输入.png",
-    "Code/刷题/华为机试/xHJ61 放苹果.md",
-    "Code/刷题/华为机试/xHJ62 查找输入整数二进制中1的个数.md",
-    "Code/刷题/华为机试/xHJ63 DNA序列.md",
     "Code/刷题/华为机试/xHJ64 MP3光标位置.md",
     "Code/刷题/华为机试/xHJ65 查找两个字符串a,b中的最长公共子串.md",
     "Code/刷题/华为机试/xHJ66 配置文件恢复.md",
-    "Code/刷题/华为机试/xHJ67 24点游戏算法.md",
-    "Code/刷题/华为机试/xHJ68 成绩排序.md",
     "Code/刷题/华为机试/asset/HJ66 描述图片.png",
     "Code/刷题/华为机试/asset/HJ64 描述图片.png",
     "Code/刷题/华为机试/asset",
