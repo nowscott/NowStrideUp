@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Code/刷题/华为机试/xHJ60 查找组成一个偶数最接近的两个素数.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Code/刷题/华为机试/xHJ60 查找组成一个偶数最接近的两个素数.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Code/刷题/华为机试/xHJ60 查找组成一个偶数最接近的两个素数.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Code/刷题/华为机试/xHJ60 查找组成一个偶数最接近的两个素数.md"
               }
             }
           }
@@ -150,6 +150,9 @@
   },
   "active": "643517d9b81d85fd",
   "lastOpenFiles": [
+    "Code/刷题/华为机试/xHJ70 矩阵乘法计算量估算.md",
+    "Code/数据结构与算法/动态规划.md",
+    "README.md",
     "Code/刷题/华为机试/wHJ16 购物单.md",
     "Code/刷题/华为机试/wHJ18 识别有效的IP地址和掩码并进行分类统计.md",
     "Code/刷题/华为机试/wHJ24 合唱队.md",
@@ -175,10 +178,7 @@
     "Code/刷题/华为机试/xHJ66 配置文件恢复.md",
     "Code/刷题/华为机试/xHJ67 24点游戏算法.md",
     "Code/刷题/华为机试/xHJ68 成绩排序.md",
-    "Code/刷题/华为机试/xHJ69 矩阵乘法.md",
-    "Code/刷题/华为机试/xHJ70 矩阵乘法计算量估算.md",
     "Code/刷题/华为机试/asset/HJ66 描述图片.png",
-    "README.md",
     "Code/刷题/华为机试/asset/HJ64 描述图片.png",
     "Code/刷题/华为机试/asset",
     "Pasted image 20240412122434.png"
