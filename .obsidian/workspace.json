@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/刷题/华为机试/HJ25 数据分类处理.md",
+                "file": "Code/刷题/华为机试/xHJ65 查找两个字符串a,b中的最长公共子串.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/刷题/华为机试/HJ25 数据分类处理.md",
+                "file": "Code/刷题/华为机试/xHJ65 查找两个字符串a,b中的最长公共子串.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/刷题/华为机试/HJ25 数据分类处理.md",
+                "file": "Code/刷题/华为机试/xHJ65 查找两个字符串a,b中的最长公共子串.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/刷题/华为机试/HJ25 数据分类处理.md"
+                "file": "Code/刷题/华为机试/xHJ65 查找两个字符串a,b中的最长公共子串.md"
               }
             }
           }
@@ -151,9 +150,11 @@
   },
   "active": "f40f55a781894827",
   "lastOpenFiles": [
-    "Code/刷题/华为机试/xHJ68 成绩排序.md",
-    "Code/刷题/华为机试/HJ8 合并表记录.md",
+    "Code/刷题/华为机试/xHJ69 矩阵乘法.md",
     "Code/刷题/华为机试/xHJ67 24点游戏算法.md",
+    "Code/刷题/华为机试/yHJ68 成绩排序.md",
+    "Code/刷题/华为机试/HJ25 数据分类处理.md",
+    "Code/刷题/华为机试/HJ8 合并表记录.md",
     "Code/刷题/华为机试/zHJ62 查找输入整数二进制中1的个数.md",
     "Code/刷题/华为机试/xHJ63 DNA序列.md",
     "Code/刷题/华为机试/zHJ60 查找组成一个偶数最接近的两个素数.md",
@@ -175,10 +176,8 @@
     "Code/刷题/华为机试/wHJ57 高精度整数加法.md",
     "Code/刷题/华为机试/wHJ52 计算字符串的编辑距离.md",
     "Articles/03Badge制作指北——手把手教你制作Badge.md",
-    "Articles/01构建一个自己的索引网站.md",
     "Code/刷题/华为机试/asset/HJ44 数独输出.png",
     "Code/刷题/华为机试/asset/HJ44 数独输入.png",
-    "Code/刷题/华为机试/xHJ64 MP3光标位置.md",
     "Code/刷题/华为机试/asset/HJ66 描述图片.png",
     "Code/刷题/华为机试/asset/HJ64 描述图片.png",
     "Code/刷题/华为机试/asset",

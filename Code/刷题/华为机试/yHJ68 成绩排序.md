@@ -65,6 +65,25 @@ yang 50
 ning 70
 fang 90
 ```
+## 我的代码
+```python
+n = int(input())
+k = input()
+dict = {}
+while 1:
+    try:
+        str = input()
+        grade = int(input().split()[1])
+        dict[str] = grade
+    except:
+        break
+if k:
+    sorted_dict = sorted(dict.values(),reverse=True)
+else:
+    sorted_dict = sorted(dict.values())
+for key in sorted_dict:
+    print(key)
+```
 ## 高手代码
 ```python
 while 1:
