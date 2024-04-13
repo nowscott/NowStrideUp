@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/刷题/华为机试/xHJ63 DNA序列.md",
+                "file": "Code/刷题/华为机试/wHJ52 计算字符串的编辑距离.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/刷题/华为机试/xHJ63 DNA序列.md",
+                "file": "Code/刷题/华为机试/wHJ52 计算字符串的编辑距离.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/刷题/华为机试/xHJ63 DNA序列.md",
+                "file": "Code/刷题/华为机试/wHJ52 计算字符串的编辑距离.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/刷题/华为机试/xHJ63 DNA序列.md"
+                "file": "Code/刷题/华为机试/wHJ52 计算字符串的编辑距离.md"
               }
             }
           }
@@ -150,8 +150,12 @@
   },
   "active": "f40f55a781894827",
   "lastOpenFiles": [
+    "Code/刷题/华为机试/wHJ39 判断两个IP是否属于同一子网.md",
+    "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
+    "Code/刷题/华为机试/xHJ66 配置文件恢复.md",
+    "README.md",
+    "Code/刷题/华为机试/zHJ63 DNA序列.md",
     "Code/python/python常用方法/count().md",
-    "Code/刷题/华为机试/xHJ63 DNA序列.md",
     "Code/刷题/华为机试/xHJ64 MP3光标位置.md",
     "Code/刷题/华为机试/yHJ68 成绩排序.md",
     "Code/刷题/华为机试/zHJ65 查找两个字符串a,b中的最长公共子串.md",
@@ -165,17 +169,13 @@
     "Code/刷题/华为机试/xHJ61 放苹果.md",
     "Code/刷题/华为机试/xHJ70 矩阵乘法计算量估算.md",
     "Code/数据结构与算法/动态规划.md",
-    "README.md",
     "Code/刷题/华为机试/wHJ16 购物单.md",
     "Code/刷题/华为机试/wHJ18 识别有效的IP地址和掩码并进行分类统计.md",
     "Code/刷题/华为机试/wHJ24 合唱队.md",
     "Code/刷题/华为机试/wHJ28 素数伴侣.md",
     "Code/刷题/华为机试/wHJ32 密码截取.md",
-    "Code/刷题/华为机试/wHJ39 判断两个IP是否属于同一子网.md",
     "Code/刷题/华为机试/wHJ42 学英语.md",
     "Code/刷题/华为机试/wHJ44 Sudoku.md",
-    "Code/刷题/华为机试/wHJ50 四则运算.md",
-    "Code/刷题/华为机试/wHJ51 输出单向链表中倒数第k个结点.md",
     "Code/刷题/华为机试/asset/HJ44 数独输出.png",
     "Code/刷题/华为机试/asset/HJ44 数独输入.png",
     "Code/刷题/华为机试/asset/HJ66 描述图片.png",
