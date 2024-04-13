@@ -28,6 +28,27 @@ abcsafjklmnopqrstuvw
 输出：
 jklmnop
 ```
+## 我的代码
+```python
+s1 = input()
+s2 = input()
+def ishort(s1,s2):
+    return s1 if len(s1)<=len(s2) else s2
+def islong(s1,s2):
+    return s1 if len(s1)>len(s2) else s2
+ss = ishort(s1,s2)
+l = len(ss)
+sl = islong(s1,s2)
+maxl = 0
+res = ''
+for i in range(l):
+    for j in range(i,l):
+        if len(sl.split(ss[i:i+l-j]))==2:
+            if maxl<len(ss[i:i+l-j]):
+                maxl = len(ss[i:i+l-j])
+                res = ss[i:i+l-j]
+print(res)
+```
 ## 高手代码
 ```python
 while True:
