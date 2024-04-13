@@ -1,9 +1,6 @@
 ---
 createDate: 2024-04-12 12:13
-tags:
-  - 刷题
-  - python
-  - 字符串
+tags: [刷题, 字符串, python]
 ---
 ## 描述
 
@@ -13,7 +10,7 @@ tags:
 
 DNA序列为 ACGT 的子串有: ACG , CG , CGT 等等，但是没有 AGT ， CT 等等
 
-数据范围：字符串长度满足 $1≤n≤1000$  ，输入的字符串只包含 A/C/G/T 字母  
+数据范围：字符串长度满足 $1≤n≤1000$  ，输入的字符串只包含 A/C/G/T 字母
 
 ### 输入描述：
 
@@ -41,9 +38,21 @@ GCACG
 ```
 ## answer
 ```python
-
+s = input()
+k = int(input())
+def GC_num(s):
+    l = len(s)
+    n = s.count('G')+s.count('C')
+    return n/l
+maxgc = 0
+res = ''
+for i in range(len(s)-k):
+    t = GC_num(s[i:i+k])
+    if t>maxgc:
+        maxgc = t
+        res = s[i:i+k]
+print(res)
 ```
 ## 高手代码
 ```python
-
 ```
