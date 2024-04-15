@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/刷题/华为机试/wHJ52 计算字符串的编辑距离.md",
+                "file": "Code/刷题/华为机试/zHJ65 查找两个字符串a,b中的最长公共子串.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/刷题/华为机试/wHJ52 计算字符串的编辑距离.md",
+                "file": "Code/刷题/华为机试/zHJ65 查找两个字符串a,b中的最长公共子串.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/刷题/华为机试/wHJ52 计算字符串的编辑距离.md",
+                "file": "Code/刷题/华为机试/zHJ65 查找两个字符串a,b中的最长公共子串.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/刷题/华为机试/wHJ52 计算字符串的编辑距离.md"
+                "file": "Code/刷题/华为机试/zHJ65 查找两个字符串a,b中的最长公共子串.md"
               }
             }
           }
@@ -150,6 +150,7 @@
   },
   "active": "f40f55a781894827",
   "lastOpenFiles": [
+    "Code/刷题/华为机试/wHJ52 计算字符串的编辑距离.md",
     "Code/刷题/华为机试/wHJ39 判断两个IP是否属于同一子网.md",
     "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
     "Code/刷题/华为机试/xHJ66 配置文件恢复.md",
@@ -175,7 +176,6 @@
     "Code/刷题/华为机试/wHJ28 素数伴侣.md",
     "Code/刷题/华为机试/wHJ32 密码截取.md",
     "Code/刷题/华为机试/wHJ42 学英语.md",
-    "Code/刷题/华为机试/wHJ44 Sudoku.md",
     "Code/刷题/华为机试/asset/HJ44 数独输出.png",
     "Code/刷题/华为机试/asset/HJ44 数独输入.png",
     "Code/刷题/华为机试/asset/HJ66 描述图片.png",
