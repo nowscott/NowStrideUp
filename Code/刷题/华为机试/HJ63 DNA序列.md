@@ -40,17 +40,28 @@ GCACG
 ```python
 s = input()
 k = int(input())
-def GC_num(s):
-    l = len(s)
-    n = s.count('G')+s.count('C')
-    return n/l
-maxgc = 0
+
+def GC_content(sub_s):
+    """
+    计算子串的 GC 含量
+    """
+    gc_count = 0
+    for char in sub_s:
+        if char == 'G' or char == 'C':
+            gc_count += 1
+    return gc_count / len(sub_s) if len(sub_s) > 0 else 0 #避免出现除零错误
+
+max_gc = 0
 res = ''
-for i in range(len(s)-k):
-    t = GC_num(s[i:i+k])
-    if t>maxgc:
-        maxgc = t
-        res = s[i:i+k]
+
+# 遍历字符串的所有长度为 k 的子串
+for i in range(len(s) - k + 1):
+    sub_s = s[i:i+k]  # 获取当前子串
+    gc = GC_content(sub_s)  # 计算当前子串的 GC 含量
+    if gc > max_gc:  # 更新最大 GC 含量和对应的子串
+        max_gc = gc
+        res = sub_s
+
 print(res)
 ```
 ## 高手代码
