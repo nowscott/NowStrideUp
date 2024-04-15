@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/刷题/华为机试/zHJ62 查找输入整数二进制中1的个数.md",
+                "file": "Code/刷题/华为机试/zHJ60 查找组成一个偶数最接近的两个素数.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/刷题/华为机试/zHJ62 查找输入整数二进制中1的个数.md",
+                "file": "Code/刷题/华为机试/zHJ60 查找组成一个偶数最接近的两个素数.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/刷题/华为机试/zHJ62 查找输入整数二进制中1的个数.md",
+                "file": "Code/刷题/华为机试/zHJ60 查找组成一个偶数最接近的两个素数.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/刷题/华为机试/zHJ62 查找输入整数二进制中1的个数.md"
+                "file": "Code/刷题/华为机试/zHJ60 查找组成一个偶数最接近的两个素数.md"
               }
             }
           }
@@ -150,6 +150,7 @@
   },
   "active": "f40f55a781894827",
   "lastOpenFiles": [
+    "Code/刷题/华为机试/HJ62 查找输入整数二进制中1的个数.md",
     "Code/刷题/华为机试/HJ63 DNA序列.md",
     "Code/刷题/华为机试/HJ65 查找两个字符串a,b中的最长公共子串.md",
     "Code/刷题/华为机试/wHJ52 计算字符串的编辑距离.md",
@@ -164,7 +165,6 @@
     "Code/刷题/华为机试/xHJ67 24点游戏算法.md",
     "Code/刷题/华为机试/HJ25 数据分类处理.md",
     "Code/刷题/华为机试/HJ8 合并表记录.md",
-    "Code/刷题/华为机试/zHJ62 查找输入整数二进制中1的个数.md",
     "Code/刷题/华为机试/zHJ60 查找组成一个偶数最接近的两个素数.md",
     "Code/python/python常用方法/bin().md",
     "Code/刷题/华为机试/xHJ61 放苹果.md",
