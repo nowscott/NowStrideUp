@@ -25,6 +25,10 @@ tags: [刷题, python]
 11111111100
 ```
 
+## 我的代码
+```python
+
+```
 ## 高手代码
 ```python
 a = input()
