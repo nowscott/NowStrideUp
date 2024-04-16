@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
+                "file": "Miscellaneous/科学上网教程.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
+                "file": "Miscellaneous/科学上网教程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
+                "file": "Miscellaneous/科学上网教程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/刷题/华为机试/zHJ57 高精度整数加法.md"
+                "file": "Miscellaneous/科学上网教程.md"
               }
             }
           }
@@ -162,9 +162,10 @@
   },
   "active": "8cc8f7f3a82244cd",
   "lastOpenFiles": [
+    "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
+    "Miscellaneous/科学上网教程.md",
     "Code/刷题/华为机试/yHJ68 成绩排序.md",
     "Code/刷题/华为机试/xHJ70 矩阵乘法计算量估算.md",
-    "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
     "Miscellaneous/面试准备.md",
     "README.md",
     "Miscellaneous/asset/面试路线2.jpg",
