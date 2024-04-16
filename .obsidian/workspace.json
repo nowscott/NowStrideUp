@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "183197d60ba6a2a7",
@@ -147,7 +148,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -160,7 +162,7 @@
       "obsidian-regex-pipeline:Regex Rulesets": true
     }
   },
-  "active": "8cc8f7f3a82244cd",
+  "active": "e0310e99f9ba2c0d",
   "lastOpenFiles": [
     "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
     "Miscellaneous/科学上网教程.md",
