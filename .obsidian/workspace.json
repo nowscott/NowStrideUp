@@ -93,7 +93,7 @@
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -105,7 +105,7 @@
               "state": {
                 "file": "Code/python/python常用方法/rjust().md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -130,12 +130,12 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -148,7 +148,7 @@
       "obsidian-regex-pipeline:Regex Rulesets": true
     }
   },
-  "active": "f40f55a781894827",
+  "active": "f7876103c811d8b8",
   "lastOpenFiles": [
     "Code/python/python常用方法/zfill().md",
     "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
