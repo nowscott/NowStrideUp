@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/python/python常用方法/rjust().md",
+                "file": "Code/刷题/华为机试/HJ108 求最小公倍数.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "183197d60ba6a2a7",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/python/python常用方法/rjust().md",
+                "file": "Code/刷题/华为机试/HJ108 求最小公倍数.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/python/python常用方法/rjust().md",
+                "file": "Code/刷题/华为机试/HJ108 求最小公倍数.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/python/python常用方法/rjust().md"
+                "file": "Code/刷题/华为机试/HJ108 求最小公倍数.md"
               }
             }
           }
@@ -148,11 +147,12 @@
       "obsidian-regex-pipeline:Regex Rulesets": true
     }
   },
-  "active": "f7876103c811d8b8",
+  "active": "f40f55a781894827",
   "lastOpenFiles": [
+    "Code/python/python常用方法/rjust().md",
+    "Code/刷题/华为机试/HJ108 求最小公倍数.md",
     "Code/python/python常用方法/zfill().md",
     "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
-    "Code/python/python常用方法/rjust().md",
     "Miscellaneous/魔法教程.md",
     "Code/刷题/华为机试/yHJ68 成绩排序.md",
     "Code/刷题/华为机试/xHJ70 矩阵乘法计算量估算.md",
@@ -180,7 +180,6 @@
     "Code/刷题/华为机试/xHJ61 放苹果.md",
     "Code/数据结构与算法/动态规划.md",
     "Code/刷题/华为机试/wHJ16 购物单.md",
-    "Code/刷题/华为机试/wHJ18 识别有效的IP地址和掩码并进行分类统计.md",
     "Code/刷题/华为机试/asset/HJ44 数独输出.png",
     "Code/刷题/华为机试/asset/HJ44 数独输入.png",
     "Code/刷题/华为机试/asset/HJ66 描述图片.png",
