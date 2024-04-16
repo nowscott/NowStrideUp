@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8cc8f7f3a82244cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "未命名.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
+                "file": "未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
+                "file": "未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/刷题/华为机试/zHJ57 高精度整数加法.md"
+                "file": "未命名.md"
               }
             }
           }
@@ -148,15 +161,16 @@
       "obsidian-regex-pipeline:Regex Rulesets": true
     }
   },
-  "active": "f40f55a781894827",
+  "active": "8cc8f7f3a82244cd",
   "lastOpenFiles": [
+    "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
+    "未命名.md",
     "Code/刷题/华为机试/HJ60 查找组成一个偶数最接近的两个素数.md",
     "Code/刷题/华为机试/HJ62 查找输入整数二进制中1的个数.md",
     "Code/刷题/华为机试/HJ63 DNA序列.md",
     "Code/刷题/华为机试/HJ65 查找两个字符串a,b中的最长公共子串.md",
     "Code/刷题/华为机试/wHJ52 计算字符串的编辑距离.md",
     "Code/刷题/华为机试/wHJ39 判断两个IP是否属于同一子网.md",
-    "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
     "Code/刷题/华为机试/xHJ66 配置文件恢复.md",
     "README.md",
     "Code/python/python常用方法/count().md",
@@ -175,7 +189,6 @@
     "Code/刷题/华为机试/wHJ24 合唱队.md",
     "Code/刷题/华为机试/wHJ28 素数伴侣.md",
     "Code/刷题/华为机试/wHJ32 密码截取.md",
-    "Code/刷题/华为机试/wHJ42 学英语.md",
     "Code/刷题/华为机试/asset/HJ44 数独输出.png",
     "Code/刷题/华为机试/asset/HJ44 数独输入.png",
     "Code/刷题/华为机试/asset/HJ66 描述图片.png",
