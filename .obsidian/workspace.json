@@ -147,8 +147,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -163,9 +162,9 @@
   },
   "active": "8cc8f7f3a82244cd",
   "lastOpenFiles": [
-    "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
     "README.md",
     "Miscellaneous/面试准备.md",
+    "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
     "Miscellaneous/asset/面试路线2.jpg",
     "Miscellaneous/asset/面试路线1.jpg",
     "Miscellaneous/asset/面试准备_路线图.jpg",
