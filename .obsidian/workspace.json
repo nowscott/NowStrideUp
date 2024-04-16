@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "8cc8f7f3a82244cd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Miscellaneous/科学上网教程.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "183197d60ba6a2a7",
@@ -99,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Miscellaneous/科学上网教程.md",
+                "file": "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Miscellaneous/科学上网教程.md",
+                "file": "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Miscellaneous/科学上网教程.md"
+                "file": "Code/刷题/华为机试/zHJ57 高精度整数加法.md"
               }
             }
           }
@@ -162,10 +148,10 @@
       "obsidian-regex-pipeline:Regex Rulesets": true
     }
   },
-  "active": "e0310e99f9ba2c0d",
+  "active": "f40f55a781894827",
   "lastOpenFiles": [
+    "Miscellaneous/魔法教程.md",
     "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
-    "Miscellaneous/科学上网教程.md",
     "Code/刷题/华为机试/yHJ68 成绩排序.md",
     "Code/刷题/华为机试/xHJ70 矩阵乘法计算量估算.md",
     "Miscellaneous/面试准备.md",
