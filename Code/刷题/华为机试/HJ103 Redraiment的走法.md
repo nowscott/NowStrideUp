@@ -1,6 +1,10 @@
 ---
 createDate: 2024-04-17 12:42
-tags: [排序, 刷题, python]
+tags:
+  - 排序
+  - 刷题
+  - python
+  - 动态规划
 ---
 ## 描述
 
@@ -29,5 +33,17 @@ Redraiment是走梅花桩的高手。Redraiment可以选择任意一个起点，
 
 ## 我的代码
 ```python
-
+n = int(input())
+heights = list(map(int,input().split()))
+if n == 0:
+    print(0)
+# 初始化dp数组，每个元素至少可以构成长度为1的递增子序列
+dp = [1] * n
+# 动态规划填充dp数组
+for i in range(1, n):
+    for j in range(i):
+        if heights[j] < heights[i]:
+            dp[i] = max(dp[i], dp[j] + 1)
+# 找出dp数组中的最大值，即为最长递增子序列的长度
+print(max(dp))
 ```
