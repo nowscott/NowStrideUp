@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/刷题/华为机试/HJ108 求最小公倍数.md",
+                "file": "Code/刷题/华为机试/HJ107 求解立方根.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/刷题/华为机试/HJ108 求最小公倍数.md",
+                "file": "Code/刷题/华为机试/HJ107 求解立方根.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/刷题/华为机试/HJ108 求最小公倍数.md",
+                "file": "Code/刷题/华为机试/HJ107 求解立方根.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/刷题/华为机试/HJ108 求最小公倍数.md"
+                "file": "Code/刷题/华为机试/HJ107 求解立方根.md"
               }
             }
           }
@@ -149,8 +149,9 @@
   },
   "active": "f40f55a781894827",
   "lastOpenFiles": [
-    "Code/python/python常用方法/rjust().md",
     "Code/刷题/华为机试/HJ108 求最小公倍数.md",
+    "Code/刷题/华为机试/HJ107 求解立方根.md",
+    "Code/python/python常用方法/rjust().md",
     "Code/python/python常用方法/zfill().md",
     "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
     "Miscellaneous/魔法教程.md",
@@ -179,7 +180,6 @@
     "Code/python/python常用方法/bin().md",
     "Code/刷题/华为机试/xHJ61 放苹果.md",
     "Code/数据结构与算法/动态规划.md",
-    "Code/刷题/华为机试/wHJ16 购物单.md",
     "Code/刷题/华为机试/asset/HJ44 数独输出.png",
     "Code/刷题/华为机试/asset/HJ44 数独输入.png",
     "Code/刷题/华为机试/asset/HJ66 描述图片.png",
