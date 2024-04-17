@@ -10,5 +10,6 @@
   },
   "attachmentFolderPath": "./asset",
   "trashOption": "local",
-  "promptDelete": false
+  "promptDelete": false,
+  "spellcheck": false
 }
