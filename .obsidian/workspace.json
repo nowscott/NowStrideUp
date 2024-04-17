@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Miscellaneous/1.md",
+                "file": "Code/刷题/华为机试/wHJ71 字符串通配符.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Miscellaneous/1.md",
+                "file": "Code/刷题/华为机试/wHJ71 字符串通配符.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Miscellaneous/1.md",
+                "file": "Code/刷题/华为机试/wHJ71 字符串通配符.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Miscellaneous/1.md"
+                "file": "Code/刷题/华为机试/wHJ71 字符串通配符.md"
               }
             }
           }
@@ -147,10 +147,10 @@
       "obsidian-regex-pipeline:Regex Rulesets": true
     }
   },
-  "active": "f40f55a781894827",
+  "active": "f7876103c811d8b8",
   "lastOpenFiles": [
-    "Miscellaneous/asset/Pasted image 20240417174019.png",
     "Miscellaneous/1.md",
+    "Miscellaneous/asset/Pasted image 20240417174019.png",
     "Code/刷题/华为机试/wHJ71 字符串通配符.md",
     "Code/刷题/华为机试/wHJ98 自动售货系统.md",
     "Code/刷题/华为机试/HJ100 等差数列.md",
