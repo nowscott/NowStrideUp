@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/刷题/华为机试/HJ105.md",
+                "file": "Code/刷题/华为机试/HJ105 记负均正.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/刷题/华为机试/HJ105.md",
+                "file": "Code/刷题/华为机试/HJ105 记负均正.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/刷题/华为机试/HJ105.md",
+                "file": "Code/刷题/华为机试/HJ105 记负均正.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/刷题/华为机试/HJ105.md"
+                "file": "Code/刷题/华为机试/HJ105 记负均正.md"
               }
             }
           }
@@ -150,7 +150,7 @@
   "active": "f40f55a781894827",
   "lastOpenFiles": [
     "Code/刷题/华为机试/HJ108 求最小公倍数.md",
-    "Code/刷题/华为机试/HJ105.md",
+    "Code/刷题/华为机试/HJ105 记负均正.md",
     "Code/刷题/华为机试/HJ106 字符逆序.md",
     "Code/刷题/华为机试/HJ107 求解立方根.md",
     "Code/刷题/华为机试/HJ99 自守数.md",
