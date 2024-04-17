@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/刷题/华为机试/HJ107 求解立方根.md",
+                "file": "Code/刷题/华为机试/HJ106 字符逆序.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/刷题/华为机试/HJ107 求解立方根.md",
+                "file": "Code/刷题/华为机试/HJ106 字符逆序.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/刷题/华为机试/HJ107 求解立方根.md",
+                "file": "Code/刷题/华为机试/HJ106 字符逆序.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,16 +125,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/刷题/华为机试/HJ107 求解立方根.md"
+                "file": "Code/刷题/华为机试/HJ106 字符逆序.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,8 +149,10 @@
   },
   "active": "f40f55a781894827",
   "lastOpenFiles": [
-    "Code/刷题/华为机试/HJ108 求最小公倍数.md",
     "Code/刷题/华为机试/HJ107 求解立方根.md",
+    "Code/刷题/华为机试/HJ108 求最小公倍数.md",
+    "Code/刷题/华为机试/HJ106 字符逆序.md",
+    "未命名.md",
     "Code/python/python常用方法/rjust().md",
     "Code/python/python常用方法/zfill().md",
     "Code/刷题/华为机试/zHJ57 高精度整数加法.md",
@@ -178,8 +180,6 @@
     "Code/刷题/华为机试/HJ25 数据分类处理.md",
     "Code/刷题/华为机试/HJ8 合并表记录.md",
     "Code/python/python常用方法/bin().md",
-    "Code/刷题/华为机试/xHJ61 放苹果.md",
-    "Code/数据结构与算法/动态规划.md",
     "Code/刷题/华为机试/asset/HJ44 数独输出.png",
     "Code/刷题/华为机试/asset/HJ44 数独输入.png",
     "Code/刷题/华为机试/asset/HJ66 描述图片.png",
