@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/刷题/华为机试/HJ100 等差数列.md",
+                "file": "Code/刷题/华为机试/w.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/刷题/华为机试/HJ100 等差数列.md",
+                "file": "Code/刷题/华为机试/w.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/刷题/华为机试/HJ100 等差数列.md",
+                "file": "Code/刷题/华为机试/w.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/刷题/华为机试/HJ100 等差数列.md"
+                "file": "Code/刷题/华为机试/w.md"
               }
             }
           }
@@ -149,8 +149,9 @@
   },
   "active": "f40f55a781894827",
   "lastOpenFiles": [
-    "Code/刷题/华为机试/HJ101 输入整型数组和排序标识，对其元素按照升序或降序进行排序.md",
     "Code/刷题/华为机试/HJ100 等差数列.md",
+    "Code/刷题/华为机试/w.md",
+    "Code/刷题/华为机试/HJ101 输入整型数组和排序标识，对其元素按照升序或降序进行排序.md",
     "Code/刷题/华为机试/HJ102 字符统计.md",
     "Code/刷题/华为机试/HJ103 Redraiment的走法.md",
     "Code/刷题/华为机试/HJ105 记负均正.md",
@@ -179,7 +180,6 @@
     "Miscellaneous",
     "Code/刷题/华为机试/HJ60 查找组成一个偶数最接近的两个素数.md",
     "Code/刷题/华为机试/HJ62 查找输入整数二进制中1的个数.md",
-    "Code/刷题/华为机试/HJ63 DNA序列.md",
     "Code/刷题/华为机试/asset/HJ44 数独输出.png",
     "Code/刷题/华为机试/asset/HJ44 数独输入.png",
     "Code/刷题/华为机试/asset/HJ66 描述图片.png",
