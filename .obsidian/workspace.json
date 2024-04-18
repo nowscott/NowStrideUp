@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/刷题/华为机试/wHJ16 购物单.md",
+                "file": "Code/刷题/华为机试/wHJ18 识别有效的IP地址和掩码并进行分类统计.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "183197d60ba6a2a7",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/刷题/华为机试/wHJ16 购物单.md",
+                "file": "Code/刷题/华为机试/wHJ18 识别有效的IP地址和掩码并进行分类统计.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/刷题/华为机试/wHJ16 购物单.md",
+                "file": "Code/刷题/华为机试/wHJ18 识别有效的IP地址和掩码并进行分类统计.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/刷题/华为机试/wHJ16 购物单.md"
+                "file": "Code/刷题/华为机试/wHJ18 识别有效的IP地址和掩码并进行分类统计.md"
               }
             }
           }
@@ -151,8 +150,9 @@
   },
   "active": "f40f55a781894827",
   "lastOpenFiles": [
+    "Code/刷题/华为机试/wHJ24 合唱队.md",
+    "Code/刷题/华为机试/HJ16 购物单.md",
     "Code/刷题/华为机试/HJ61 放苹果.md",
-    "Code/刷题/华为机试/wHJ16 购物单.md",
     "Code/刷题/华为机试/wHJ98 自动售货系统.md",
     "Code/刷题/华为机试/HJ57 高精度整数加法.md",
     "Code/python/python常用方法/map().md",
@@ -177,7 +177,6 @@
     "Code/刷题/华为机试/wHJ70 矩阵乘法计算量估算.md",
     "Code/刷题/华为机试/wHJ69 矩阵乘法.md",
     "Code/刷题/华为机试/wHJ66 配置文件恢复.md",
-    "Code/刷题/华为机试/wHJ64 MP3光标位置.md",
     "Miscellaneous/asset/面试路线2.jpg",
     "Miscellaneous/asset/面试路线1.jpg",
     "Miscellaneous/asset/面试准备_路线图.jpg",
