@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Miscellaneous/未命名.md",
+                "file": "Miscellaneous/魔法教程.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Miscellaneous/未命名.md",
+                "file": "Miscellaneous/魔法教程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Miscellaneous/未命名.md",
+                "file": "Miscellaneous/魔法教程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Miscellaneous/未命名.md"
+                "file": "Miscellaneous/魔法教程.md"
               }
             }
           }
@@ -149,8 +149,8 @@
   },
   "active": "f40f55a781894827",
   "lastOpenFiles": [
-    "Code/刷题/华为机试/wHJ71 字符串通配符.md",
     "Miscellaneous/未命名.md",
+    "Code/刷题/华为机试/wHJ71 字符串通配符.md",
     "Miscellaneous/1.md",
     "Miscellaneous/asset/Pasted image 20240417174019.png",
     "Code/刷题/华为机试/wHJ98 自动售货系统.md",
