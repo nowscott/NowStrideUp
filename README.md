@@ -14,20 +14,21 @@ createDate: 2024-04-11 11:24
 ### 目录
 
 - Miscellaneous
+  - [魔法教程.md](Miscellaneous/%E9%AD%94%E6%B3%95%E6%95%99%E7%A8%8B.md)
   - [面试准备.md](Miscellaneous/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87.md)
 - Code
   - 数据结构与算法
     - [动态规划.md](Code/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92.md)
   - 刷题
     - 华为机试
-      - [zHJ57 高精度整数加法.md](wHJ57%20高精度整数加法.md)
-      - [yHJ68 成绩排序.md](wHJ68%20成绩排序.md)
-      - [xHJ70 矩阵乘法计算量估算.md](wHJ70%20矩阵乘法计算量估算.md)
-      - [xHJ69 矩阵乘法.md](wHJ69%20矩阵乘法.md)
-      - [xHJ67 24点游戏算法.md](wHJ67%2024点游戏算法.md)
-      - [xHJ66 配置文件恢复.md](wHJ66%20配置文件恢复.md)
-      - [xHJ64 MP3光标位置.md](wHJ64%20MP3光标位置.md)
-      - [xHJ61 放苹果.md](wHJ61%20放苹果.md)
+      - [wHJ70 矩阵乘法计算量估算.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ70%20%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95%E8%AE%A1%E7%AE%97%E9%87%8F%E4%BC%B0%E7%AE%97.md)
+      - [wHJ69 矩阵乘法.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ69%20%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95.md)
+      - [wHJ68 成绩排序.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ68%20%E6%88%90%E7%BB%A9%E6%8E%92%E5%BA%8F.md)
+      - [wHJ67 24点游戏算法.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ67%2024%E7%82%B9%E6%B8%B8%E6%88%8F%E7%AE%97%E6%B3%95.md)
+      - [wHJ66 配置文件恢复.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ66%20%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D.md)
+      - [wHJ64 MP3光标位置.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ64%20MP3%E5%85%89%E6%A0%87%E4%BD%8D%E7%BD%AE.md)
+      - [wHJ61 放苹果.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ61%20%E6%94%BE%E8%8B%B9%E6%9E%9C.md)
+      - [wHJ57 高精度整数加法.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ57%20%E9%AB%98%E7%B2%BE%E5%BA%A6%E6%95%B4%E6%95%B0%E5%8A%A0%E6%B3%95.md)
       - [wHJ52 计算字符串的编辑距离.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ52%20%E8%AE%A1%E7%AE%97%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB.md)
       - [wHJ51 输出单向链表中倒数第k个结点.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ51%20%E8%BE%93%E5%87%BA%E5%8D%95%E5%90%91%E9%93%BE%E8%A1%A8%E4%B8%AD%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E7%BB%93%E7%82%B9.md)
       - [wHJ50 四则运算.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ50%20%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97.md)
@@ -39,6 +40,13 @@ createDate: 2024-04-11 11:24
       - [wHJ24 合唱队.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ24%20%E5%90%88%E5%94%B1%E9%98%9F.md)
       - [wHJ18 识别有效的IP地址和掩码并进行分类统计.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ18%20%E8%AF%86%E5%88%AB%E6%9C%89%E6%95%88%E7%9A%84IP%E5%9C%B0%E5%9D%80%E5%92%8C%E6%8E%A9%E7%A0%81%E5%B9%B6%E8%BF%9B%E8%A1%8C%E5%88%86%E7%B1%BB%E7%BB%9F%E8%AE%A1.md)
       - [wHJ16 购物单.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/wHJ16%20%E8%B4%AD%E7%89%A9%E5%8D%95.md)
+      - [HJ108 求最小公倍数.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ108%20%E6%B1%82%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0.md)
+      - [HJ107 求解立方根.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ107%20%E6%B1%82%E8%A7%A3%E7%AB%8B%E6%96%B9%E6%A0%B9.md)
+      - [HJ106 字符逆序.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ106%20%E5%AD%97%E7%AC%A6%E9%80%86%E5%BA%8F.md)
+      - [HJ105 记负均正.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ105%20%E8%AE%B0%E8%B4%9F%E5%9D%87%E6%AD%A3.md)
+      - [HJ103 Redraiment的走法.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ103%20Redraiment%E7%9A%84%E8%B5%B0%E6%B3%95.md)
+      - [HJ102 字符统计.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ102%20%E5%AD%97%E7%AC%A6%E7%BB%9F%E8%AE%A1.md)
+      - [HJ101 输入整型数组和排序标识，对其元素按照升序或降序进行排序.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ101%20%E8%BE%93%E5%85%A5%E6%95%B4%E5%9E%8B%E6%95%B0%E7%BB%84%E5%92%8C%E6%8E%92%E5%BA%8F%E6%A0%87%E8%AF%86%EF%BC%8C%E5%AF%B9%E5%85%B6%E5%85%83%E7%B4%A0%E6%8C%89%E7%85%A7%E5%8D%87%E5%BA%8F%E6%88%96%E9%99%8D%E5%BA%8F%E8%BF%9B%E8%A1%8C%E6%8E%92%E5%BA%8F.md)
       - [HJ99 自守数.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ99%20%E8%87%AA%E5%AE%88%E6%95%B0.md)
       - [HJ65 查找两个字符串a,b中的最长公共子串.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ65%20%E6%9F%A5%E6%89%BE%E4%B8%A4%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2a%2Cb%E4%B8%AD%E7%9A%84%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E4%B8%B2.md)
       - [HJ63 DNA序列.md](Code/%E5%88%B7%E9%A2%98/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/HJ63%20DNA%E5%BA%8F%E5%88%97.md)
@@ -97,11 +105,13 @@ createDate: 2024-04-11 11:24
       - [random.md](Code/python/python%E6%A8%A1%E5%9D%97/random.md)
       - [math.md](Code/python/python%E6%A8%A1%E5%9D%97/math.md)
     - python常用方法
+      - [zfill().md](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/zfill%28%29.md)
       - [upper().md](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/upper%28%29.md)
       - [str().md](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/str%28%29.md)
       - [split().md](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/split%28%29.md)
       - [sorted().md](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/sorted%28%29.md)
       - [sort().md](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/sort%28%29.md)
+      - [rjust().md](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/rjust%28%29.md)
       - [replace().md](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/replace%28%29.md)
       - [ord().md](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/ord%28%29.md)
       - [lower().md](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/lower%28%29.md)
@@ -126,4 +136,6 @@ createDate: 2024-04-11 11:24
   - [03Badge制作指北——手把手教你制作Badge.md](Articles/03Badge%E5%88%B6%E4%BD%9C%E6%8C%87%E5%8C%97%E2%80%94%E2%80%94%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%88%B6%E4%BD%9CBadge.md)
   - [02教你做一个每天发送科技新闻邮件的工具.md](Articles/02%E6%95%99%E4%BD%A0%E5%81%9A%E4%B8%80%E4%B8%AA%E6%AF%8F%E5%A4%A9%E5%8F%91%E9%80%81%E7%A7%91%E6%8A%80%E6%96%B0%E9%97%BB%E9%82%AE%E4%BB%B6%E7%9A%84%E5%B7%A5%E5%85%B7.md)
   - [01构建一个自己的索引网站.md](Articles/01%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%87%AA%E5%B7%B1%E7%9A%84%E7%B4%A2%E5%BC%95%E7%BD%91%E7%AB%99.md)
+- .trash
+  - [未命名.md](.trash/%E6%9C%AA%E5%91%BD%E5%90%8D.md)
 ### 结束
