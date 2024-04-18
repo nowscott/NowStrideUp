@@ -76,7 +76,7 @@ for key in primary:
     w_temp, v_temp = [], []
     w_temp.append(primary[key][0])#1、主件
     v_temp.append(primary[key][0]*primary[key][1])
-    if key in annex:#存在主件
+    if key in annex:#存在附件
         w_temp.append(w_temp[0]+annex[key][0][0])#2、主件+附件1
         v_temp.append(v_temp[0]+annex[key][0][0]*annex[key][0][1])
         if len(annex[key])>1:#存在两主件
