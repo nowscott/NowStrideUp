@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Code/刷题/华为机试/z.说明.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Code/刷题/华为机试/z.说明.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Code/刷题/华为机试/z.说明.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Code/刷题/华为机试/z.说明.md"
               }
             }
           }
@@ -160,8 +160,9 @@
   },
   "active": "2713a79445f4e0cb",
   "lastOpenFiles": [
-    "Miscellaneous/asset/面试路线2.jpg",
     "README.md",
+    "Code/刷题/华为机试/z.说明.md",
+    "Miscellaneous/asset/面试路线2.jpg",
     "Code/刷题/华为机试/wHJ44 Sudoku.md",
     "Code/刷题/华为机试/asset/HJ64_描述图片.png",
     "Miscellaneous/asset/面试路线1.jpg",
