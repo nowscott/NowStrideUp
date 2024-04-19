@@ -20,6 +20,7 @@ def generate_directory_tree(directory, depth=0, ignored_folders=set(), ignored_f
     for f in files:
         relative_path = os.path.relpath(os.path.join(directory, f), base_path)
         relative_path = urllib.parse.quote(relative_path)  # 将路径中的空格转换为%20
+        relative_path = relative_path.replace('%5C', '/')  # 将路径中的 %5C 替换为正斜杠
         tree += "  " * depth + "- [{}]({})\n".format(f, relative_path)
     return tree
 
