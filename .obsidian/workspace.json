@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/刷题/华为机试/wHJ44 Sudoku.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/刷题/华为机试/wHJ44 Sudoku.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/刷题/华为机试/wHJ44 Sudoku.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/刷题/华为机试/wHJ44 Sudoku.md"
+                "file": "README.md"
               }
             }
           }
@@ -149,28 +149,29 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-regex-pipeline:Regex Rulesets": true,
       "switcher:打开快速切换": true,
-      "graph:查看关系图谱": false,
-      "templates:插入模板": false,
+      "graph:查看关系图谱": true,
       "canvas:新建白板": true,
       "daily-notes:打开/创建今天的日记": true,
-      "command-palette:打开命令面板": true,
-      "obsidian-regex-pipeline:Regex Rulesets": true
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": true
     }
   },
-  "active": "f7876103c811d8b8",
+  "active": "2713a79445f4e0cb",
   "lastOpenFiles": [
-    "Miscellaneous/asset/面试路线1.jpg",
     "Miscellaneous/asset/面试路线2.jpg",
+    "README.md",
+    "Code/刷题/华为机试/wHJ44 Sudoku.md",
+    "Code/刷题/华为机试/asset/HJ64_描述图片.png",
+    "Miscellaneous/asset/面试路线1.jpg",
     "Miscellaneous/魔法教程.md",
     "Miscellaneous/asset",
     "Miscellaneous",
     "Miscellaneous/面试准备.md",
-    "Code/刷题/华为机试/wHJ44 Sudoku.md",
     "Code/刷题/华为机试/asset/HJ44_数独输入.png",
     "Code/刷题/华为机试/wHJ66 配置文件恢复.md",
     "Code/刷题/华为机试/wHJ64 MP3光标位置.md",
-    "Code/刷题/华为机试/asset/HJ64_描述图片.png",
     "asset/面试路线2.md",
     "asset",
     "Code/python/python常用方法/defaultdict().md",
@@ -188,7 +189,6 @@
     "Code/python/python常用方法/map().md",
     "Code/刷题/华为机试/wHJ67 24点游戏算法.md",
     "Code/刷题/华为机试/wHJ71 字符串通配符.md",
-    "README.md",
     "Miscellaneous/未命名.md",
     "Miscellaneous/1.md",
     "Miscellaneous/asset/Pasted image 20240417174019.png",
