@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/刷题/华为机试/xHJ28 素数伴侣.md",
+                "file": "Code/刷题/华为机试/HJ72.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/刷题/华为机试/xHJ28 素数伴侣.md",
+                "file": "Code/刷题/华为机试/HJ72.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/刷题/华为机试/xHJ28 素数伴侣.md",
+                "file": "Code/刷题/华为机试/HJ72.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/刷题/华为机试/xHJ28 素数伴侣.md"
+                "file": "Code/刷题/华为机试/HJ72.md"
               }
             }
           }
@@ -150,9 +150,10 @@
   },
   "active": "f40f55a781894827",
   "lastOpenFiles": [
+    "Code/刷题/华为机试/xHJ28 素数伴侣.md",
+    "Code/刷题/华为机试/HJ72.md",
     "Code/刷题/华为机试/wHJ64 MP3光标位置.md",
     "Code/刷题/华为机试/wHJ50 四则运算.md",
-    "Code/刷题/华为机试/xHJ28 素数伴侣.md",
     "Code/刷题/华为机试/wHJ24 合唱队.md",
     "Code/刷题/华为机试/wHJ18 识别有效的IP地址和掩码并进行分类统计.md",
     "Code/刷题/华为机试/HJ32 密码截取.md",
@@ -176,7 +177,6 @@
     "Code/刷题/华为机试/HJ108 求最小公倍数.md",
     "Code/刷题/华为机试/HJ106 字符逆序.md",
     "Code/刷题/华为机试/HJ107 求解立方根.md",
-    "Code/刷题/华为机试/HJ99 自守数.md",
     "Miscellaneous/asset/面试路线2.jpg",
     "Miscellaneous/asset/面试路线1.jpg",
     "Miscellaneous/asset/面试准备_路线图.jpg",
