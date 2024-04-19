@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Miscellaneous/面试准备.md",
+                "file": "Code/刷题/华为机试/wHJ44 Sudoku.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Miscellaneous/面试准备.md",
+                "file": "Code/刷题/华为机试/wHJ44 Sudoku.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Miscellaneous/面试准备.md",
+                "file": "Code/刷题/华为机试/wHJ44 Sudoku.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Miscellaneous/面试准备.md"
+                "file": "Code/刷题/华为机试/wHJ44 Sudoku.md"
               }
             }
           }
@@ -150,8 +150,10 @@
   },
   "active": "f40f55a781894827",
   "lastOpenFiles": [
-    "Miscellaneous/asset/面试路线1.jpg",
+    "Code/刷题/华为机试/asset/HJ44_数独输入.png",
+    "Code/刷题/华为机试/wHJ44 Sudoku.md",
     "Miscellaneous/面试准备.md",
+    "Miscellaneous/asset/面试路线1.jpg",
     "asset/面试路线2.md",
     "asset",
     "Miscellaneous/魔法教程.md",
@@ -178,12 +180,10 @@
     "Miscellaneous/asset/Pasted image 20240417174019.png",
     "Code/刷题/华为机试/HJ100 等差数列.md",
     "Code/刷题/华为机试/HJ101 输入整型数组和排序标识，对其元素按照升序或降序进行排序.md",
-    "Code/刷题/华为机试/HJ102 字符统计.md",
     "Miscellaneous/asset/面试准备_路线图.jpg",
     "Miscellaneous/asset",
     "Miscellaneous",
-    "Code/刷题/华为机试/asset/HJ44 数独输出.png",
-    "Code/刷题/华为机试/asset/HJ44 数独输入.png",
+    "Code/刷题/华为机试/asset/HJ44_数独输出.png",
     "Code/刷题/华为机试/asset/HJ66 描述图片.png",
     "Code/刷题/华为机试/asset/HJ64 描述图片.png",
     "Code/刷题/华为机试/asset",
