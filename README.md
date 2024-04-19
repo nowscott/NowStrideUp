@@ -13,9 +13,6 @@ createDate: 2024-04-11 11:24
 
 ### 目录
 
-- Miscellaneous
-  - [魔法教程.md](Miscellaneous/%E9%AD%94%E6%B3%95%E6%95%99%E7%A8%8B.md)
-  - [面试准备.md](Miscellaneous/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87.md)
 - Code
   - 数据结构与算法
     - [动态规划.md](Code/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92.md)
