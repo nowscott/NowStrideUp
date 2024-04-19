@@ -128,6 +128,7 @@ createDate: 2024-04-11 11:24
       - [format().md](Code%5Cpython%5Cpython%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%5Cformat%28%29.md)
       - [extend().md](Code%5Cpython%5Cpython%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%5Cextend%28%29.md)
       - [eval().md](Code%5Cpython%5Cpython%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%5Ceval%28%29.md)
+      - [defaultdict().md](Code%5Cpython%5Cpython%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%5Cdefaultdict%28%29.md)
       - [count().md](Code%5Cpython%5Cpython%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%5Ccount%28%29.md)
       - [chr().md](Code%5Cpython%5Cpython%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%5Cchr%28%29.md)
       - [bin().md](Code%5Cpython%5Cpython%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%5Cbin%28%29.md)
@@ -142,7 +143,4 @@ createDate: 2024-04-11 11:24
   - [03Badge制作指北——手把手教你制作Badge.md](Articles%5C03Badge%E5%88%B6%E4%BD%9C%E6%8C%87%E5%8C%97%E2%80%94%E2%80%94%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%88%B6%E4%BD%9CBadge.md)
   - [02教你做一个每天发送科技新闻邮件的工具.md](Articles%5C02%E6%95%99%E4%BD%A0%E5%81%9A%E4%B8%80%E4%B8%AA%E6%AF%8F%E5%A4%A9%E5%8F%91%E9%80%81%E7%A7%91%E6%8A%80%E6%96%B0%E9%97%BB%E9%82%AE%E4%BB%B6%E7%9A%84%E5%B7%A5%E5%85%B7.md)
   - [01构建一个自己的索引网站.md](Articles%5C01%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%87%AA%E5%B7%B1%E7%9A%84%E7%B4%A2%E5%BC%95%E7%BD%91%E7%AB%99.md)
-- .trash
-  - [未命名.md](.trash%5C%E6%9C%AA%E5%91%BD%E5%90%8D.md)
-  - [未命名 2.md](.trash%5C%E6%9C%AA%E5%91%BD%E5%90%8D%202.md)
 ### 结束
