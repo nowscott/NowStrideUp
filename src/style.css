@@ -58,7 +58,7 @@ pre[class*="language-"], code[class*="language-"] {
     font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; /* 设置等宽字体 */
     overflow-x: auto; /* 允许横向滚动 */
     padding: 16px; /* 增加内边距 */
-    font-size: 85%; /* 调整字体大小 */
+    font-size: 100%; /* 调整字体大小 */
     line-height: 1.45; /* 调整行高 */
     white-space: pre-wrap; /* 保持空白符号 */
     word-wrap: break-word; /* 自动换行 */
@@ -70,6 +70,15 @@ pre[class*="language-"] > code {
     display: block;
 }
 
+/* 图像样式 */
+img {
+    max-width: 80%; /* 图像的最大宽度为其容器的宽度 */
+    height: auto; /* 图像的高度自动调整以保持比例 */
+    display: block; /* 将图像显示为块级元素 */
+    margin: 0 auto; /* 在其容器中水平居中 */
+    border: 1px solid #ddd; /* 添加一个细边框 */
+    border-radius: 4px; /* 添加圆角 */
+}
 
 
 @media (max-width: 600px) {
