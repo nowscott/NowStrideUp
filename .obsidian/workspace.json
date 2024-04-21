@@ -144,10 +144,11 @@
       "canvas:新建白板": true,
       "daily-notes:打开/创建今天的日记": true,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": true
+      "command-palette:打开命令面板": true,
+      "hidden-folder-obsidian:隐藏文件夹": true
     }
   },
-  "active": "57c3dced3643032a",
+  "active": "f7876103c811d8b8",
   "lastOpenFiles": [
     "src/index.css",
     "src/style.css",
