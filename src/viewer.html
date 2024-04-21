@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <title>Markdown Viewer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+    <div id="filename" style="font-size: 24px; font-weight: bold; margin-bottom: 20px;"></div>
+    <div id="content"></div>
+    <button onclick="window.location.href='../index.html';">返回目录</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
     <script>
         window.MathJax = {
             tex: {
@@ -21,17 +30,23 @@
                 }
             }
         };
-    </script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-</head>
-<body>
-    <div id="filename" style="font-size: 24px; font-weight: bold; margin-bottom: 20px;"></div>
-    <div id="content"></div>
-    <button onclick="window.location.href='../index.html';">返回目录</button>
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
-    <script>
+        function protectMath(text) {
+            return text.replace(/\$\$(.+?)\$\$/gs, function(match, p1) {
+                return `$$${encodeURIComponent(p1)}$$`;
+            }).replace(/\\\((.+?)\\\)/gs, function(match, p1) {
+                return `\\(${encodeURIComponent(p1)}\\)`;
+            });
+        }
+
+        function restoreMath(html) {
+            return html.replace(/\$\$(.+?)\$\$/gs, function(match, p1) {
+                return `$$${decodeURIComponent(p1)}$$`;
+            }).replace(/\\\((.+?)\\\)/gs, function(match, p1) {
+                return `\\(${decodeURIComponent(p1)}\\)`;
+            });
+        }
+
         function loadMarkdown() {
             const query = new URLSearchParams(window.location.search);
             const path = query.get('file');
@@ -46,10 +61,12 @@
                             return;
                         }
 
-                        const filename = decodeURIComponent(path.split('/').pop().replace(/\.md$/, ''));
-                        filenameElement.textContent = filename;
+                        const protectedText = protectMath(text);
+                        const html = marked.parse(protectedText);
+                        const finalHtml = restoreMath(html);
 
-                        contentElement.innerHTML = marked.parse(text);
+                        filenameElement.textContent = decodeURIComponent(path.split('/').pop().replace(/\.md$/, ''));
+                        contentElement.innerHTML = finalHtml;
                         Prism.highlightAll();
                         MathJax.typesetPromise().then(() => {
                             console.log('MathJax has typeset the content');
