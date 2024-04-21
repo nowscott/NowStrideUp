@@ -1,10 +1,18 @@
+/* 引入自定义字体 */
+@font-face {
+    font-family: 'LXGWWenKaiMonoLite';
+    src: url('../font/LXGWWenKaiMonoLite-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'LXGWWenKaiMonoLite', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     padding: 20px;
     margin: 0;
-    padding-left: 10%; /* 添加左右留白 */
+    padding-left: 10%;
     padding-right: 10%;
 }
 
@@ -33,7 +41,7 @@ button {
     margin: 20px 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    position: fixed; /* 固定位置 */
+    position: fixed;
     bottom: 20px;
     right: 20px;
 }
@@ -42,20 +50,30 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Overwrite PrismJS Default Styles */
+/* 代码部分样式，模仿GitHub风格 */
 pre[class*="language-"], code[class*="language-"] {
-    background-color: #fefefe; /* Lighter background for code blocks */
-    border-left: 5px solid #4CAF50; /* Adds a left border to code blocks */
+    background-color: #f6f8fa; /* 灰白色背景 */
+    border-radius: 6px; /* 圆角边框 */
+    border: 1px solid #e1e4e8; /* 灰色边框 */
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; /* 设置等宽字体 */
+    overflow-x: auto; /* 允许横向滚动 */
+    padding: 16px; /* 增加内边距 */
+    font-size: 85%; /* 调整字体大小 */
+    line-height: 1.45; /* 调整行高 */
+    white-space: pre-wrap; /* 保持空白符号 */
+    word-wrap: break-word; /* 自动换行 */
+    user-select: text; /* 允许复制 */
 }
 
-/* 响应式设计：适配窄屏幕设备 */
+/* 增加代码行号的样式（如果使用了行号） */
+pre[class*="language-"] > code {
+    display: block;
+}
+
+
 @media (max-width: 600px) {
     body {
         padding-left: 5%;
         padding-right: 5%;
-    }
-
-    #content, button {
-        width: auto; /* 自动调整宽度 */
     }
 }
