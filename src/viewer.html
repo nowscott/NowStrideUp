@@ -4,25 +4,14 @@
     <meta charset="UTF-8">
     <title>Markdown Viewer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css">
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script>
-</head>
-<body>
-    <div id="filename" style="font-size: 24px; font-weight: bold; margin-bottom: 20px;"></div>
-    <div id="content"></div>
-    <button onclick="window.location.href='../index.html';">返回目录</button>
-
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
     <script>
         window.MathJax = {
             tex: {
                 inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']],
-                packages: {'[+]': ['ams']},
-                tags: 'ams'
+                packages: {'[+]': ['ams']}
             },
-            chtml: {
-                scale: 0.9
+            svg: {
+                fontCache: 'global'
             },
             startup: {
                 ready: () => {
@@ -32,7 +21,17 @@
                 }
             }
         };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+    <div id="filename" style="font-size: 24px; font-weight: bold; margin-bottom: 20px;"></div>
+    <div id="content"></div>
+    <button onclick="window.location.href='../index.html';">返回目录</button>
 
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+    <script>
         function loadMarkdown() {
             const query = new URLSearchParams(window.location.search);
             const path = query.get('file');
