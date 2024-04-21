@@ -1,0 +1,61 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+    padding-left: 10%; /* 添加左右留白 */
+    padding-right: 10%;
+}
+
+#filename {
+    color: #2a5298;
+    text-align: center;
+}
+
+#content {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: fixed; /* 固定位置 */
+    bottom: 20px;
+    right: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Overwrite PrismJS Default Styles */
+pre[class*="language-"], code[class*="language-"] {
+    background-color: #fefefe; /* Lighter background for code blocks */
+    border-left: 5px solid #4CAF50; /* Adds a left border to code blocks */
+}
+
+/* 响应式设计：适配窄屏幕设备 */
+@media (max-width: 600px) {
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #content, button {
+        width: auto; /* 自动调整宽度 */
+    }
+}
