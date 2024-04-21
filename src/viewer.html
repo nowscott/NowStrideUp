@@ -7,6 +7,7 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script>
 </head>
 <body>
+    <div id="filename" style="font-size: 24px; font-weight: bold; margin-bottom: 20px;"></div>
     <div id="content"></div>
     <button onclick="window.location.href='../index.html';">返回目录</button>
 
@@ -39,11 +40,16 @@
                 fetch('../' + path)
                     .then(response => response.text())
                     .then(text => {
+                        const filenameElement = document.getElementById('filename');
                         const contentElement = document.getElementById('content');
-                        if (!contentElement) {
-                            console.error('Content element not found');
+                        if (!contentElement || !filenameElement) {
+                            console.error('Element not found');
                             return;
                         }
+
+                        const filename = decodeURIComponent(path.split('/').pop().replace(/\.md$/, ''));
+                        filenameElement.textContent = filename;
+
                         contentElement.innerHTML = marked.parse(text);
                         Prism.highlightAll();
                         MathJax.typesetPromise().then(() => {
