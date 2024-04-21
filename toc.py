@@ -1,5 +1,6 @@
 import os
 import re
+from tkinter import font
 import urllib.parse
 
 def natural_sort_key(s):
@@ -28,8 +29,8 @@ def generate_directory_tree(directory, depth=0, ignored_folders=set(), ignored_f
 current_directory = os.getcwd()
 
 # 指定要忽略的文件夹和文件
-ignored_folders = {'.github', 'Temp', '.git','.obsidian','asset','.trash','Miscellaneous'}  
-ignored_files = {'toc.py', '.DS_Store', 'README.md', '.gitignore'}
+ignored_folders = {'.github', 'Temp', '.git','.obsidian','asset','.trash','Miscellaneous','src','font'}  
+ignored_files = {'toc.py', '.DS_Store', 'README.md', '.gitignore','index.html'}
 
 # 读取README.md文件内容
 try:
