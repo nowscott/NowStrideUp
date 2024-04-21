@@ -4,33 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "91420d73930d9f5e",
+        "id": "d37f7b5852ff42f4",
         "type": "tabs",
         "children": [
           {
-            "id": "f40f55a781894827",
+            "id": "57c3dced3643032a",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "Code/刷题/华为机试/asset/HJ64_描述图片.png"
-              }
-            }
-          },
-          {
-            "id": "2713a79445f4e0cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Code/数据结构与算法/图论的一些问题与解答.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/数据结构与算法/图论的一些问题与解答.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/数据结构与算法/图论的一些问题与解答.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -136,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Code/数据结构与算法/图论的一些问题与解答.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -159,16 +140,16 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "2713a79445f4e0cb",
+  "active": "57c3dced3643032a",
   "lastOpenFiles": [
-    "Code/python/Flask/入门Flask.md",
     "Code/数据结构与算法/图论的一些问题与解答.md",
+    "Code/刷题/华为机试/asset/HJ64_描述图片.png",
+    "Code/python/Flask/入门Flask.md",
     "Code/刷题/华为机试/z.说明.md",
     "Code/python/Flask",
     "README.md",
     "Miscellaneous/asset/面试路线2.jpg",
     "Code/刷题/华为机试/wHJ44 Sudoku.md",
-    "Code/刷题/华为机试/asset/HJ64_描述图片.png",
     "Miscellaneous/asset/面试路线1.jpg",
     "Miscellaneous/魔法教程.md",
     "Miscellaneous/asset",
@@ -194,7 +175,6 @@
     "Code/python/python常用方法/map().md",
     "Code/刷题/华为机试/wHJ67 24点游戏算法.md",
     "Code/刷题/华为机试/wHJ71 字符串通配符.md",
-    "Miscellaneous/未命名.md",
     "Miscellaneous/asset/Pasted image 20240417174019.png",
     "Miscellaneous/asset/面试准备_路线图.jpg",
     "Code/刷题/华为机试/asset/HJ44_数独输出.png",
