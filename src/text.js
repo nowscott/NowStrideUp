@@ -48,8 +48,8 @@ function loadMarkdown() {
                 const protectedText = protectMath(text);
                 const html = marked.parse(protectedText);
                 const finalHtml = restoreMath(html);
-
-                filenameElement.textContent = decodeURIComponent(path.split('/').pop().replace(/\.md$/, ''));
+                const filename = decodeURIComponent(path.split('/').pop().replace(/\.md$/, ''));
+                filenameElement.textContent = filename;
                 document.title = filename;
                 contentElement.innerHTML = finalHtml;
                 Prism.highlightAll();
