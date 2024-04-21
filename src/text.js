@@ -50,6 +50,7 @@ function loadMarkdown() {
                 const finalHtml = restoreMath(html);
 
                 filenameElement.textContent = decodeURIComponent(path.split('/').pop().replace(/\.md$/, ''));
+                document.title = filename;
                 contentElement.innerHTML = finalHtml;
                 Prism.highlightAll();
                 MathJax.typesetPromise().then(() => {
