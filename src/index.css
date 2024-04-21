@@ -1,13 +1,21 @@
 /* 目录页面的样式 */
 
+@font-face {
+    font-family: 'LXGW WenKai Mono Lite';
+    src: url('../font/LXGWWenKaiMonoLite-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'LXGW WenKai Mono Lite', Arial, sans-serif; /* 使用指定的字体 */
     margin: 0;
-    padding: 0;
+    padding: 20px; /* 在内容和页面边缘之间留出一些空白 */
+    background-color: #f9f9f9; /* 设置页面背景颜色 */
 }
 
 #tableOfContents {
-    background-color: #f0f0f0;
+    background-color: #fff; /* 设置目录区域背景颜色 */
     padding: 20px;
     max-width: 600px;
     margin: 0 auto;
@@ -22,14 +30,18 @@ body {
     padding: 0;
 }
 
+#tableOfContents ul ul {
+    padding-left: 20px; /* 设置第二层级列表的缩进 */
+}
+
 #tableOfContents li {
     margin-bottom: 10px;
 }
 
 #tableOfContents a {
-    text-decoration: none;
+    text-decoration: underline; /* 始终显示下划线 */
     color: #333;
-    transition: color 0.3s ease;
+    display: inline-block; /* 使链接元素可以设置宽度 */
 }
 
 #tableOfContents a:hover {
@@ -40,8 +52,7 @@ body {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: inherit; /* 继承父元素背景颜色 */
 }
 
 #content h1 {
@@ -51,4 +62,3 @@ body {
 #content p {
     line-height: 1.5;
 }
-
