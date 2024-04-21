@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/刷题/华为机试/z.说明.md",
+                "file": "Code/python/Flask/入门Flask.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/刷题/华为机试/z.说明.md",
+                "file": "Code/python/Flask/入门Flask.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/刷题/华为机试/z.说明.md",
+                "file": "Code/python/Flask/入门Flask.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/刷题/华为机试/z.说明.md"
+                "file": "Code/python/Flask/入门Flask.md"
               }
             }
           }
@@ -160,8 +160,10 @@
   },
   "active": "2713a79445f4e0cb",
   "lastOpenFiles": [
-    "README.md",
     "Code/刷题/华为机试/z.说明.md",
+    "Code/python/Flask/入门Flask.md",
+    "Code/python/Flask",
+    "README.md",
     "Miscellaneous/asset/面试路线2.jpg",
     "Code/刷题/华为机试/wHJ44 Sudoku.md",
     "Code/刷题/华为机试/asset/HJ64_描述图片.png",
@@ -193,7 +195,6 @@
     "Miscellaneous/未命名.md",
     "Miscellaneous/1.md",
     "Miscellaneous/asset/Pasted image 20240417174019.png",
-    "Code/刷题/华为机试/HJ100 等差数列.md",
     "Miscellaneous/asset/面试准备_路线图.jpg",
     "Code/刷题/华为机试/asset/HJ44_数独输出.png",
     "Code/刷题/华为机试/asset/HJ66_描述图片.png",
