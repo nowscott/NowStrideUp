@@ -158,10 +158,10 @@
       "daily-notes:打开/创建今天的日记": true,
       "templates:插入模板": false,
       "command-palette:打开命令面板": true,
-      "hidden-folder-obsidian:显示文件夹": false
+      "hidden-folder-obsidian:显示文件夹": true
     }
   },
-  "active": "44839cef039b803c",
+  "active": "f7876103c811d8b8",
   "lastOpenFiles": [
     "README.md",
     "Miscellaneous/魔法教程.md",
