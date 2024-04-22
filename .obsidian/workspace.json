@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Miscellaneous/魔法教程.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Miscellaneous/魔法教程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Miscellaneous/魔法教程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Miscellaneous/魔法教程.md"
               }
             }
           }
@@ -150,6 +150,7 @@
   },
   "active": "57c3dced3643032a",
   "lastOpenFiles": [
+    "README.md",
     "Code/刷题/华为机试/wHJ70 矩阵乘法计算量估算.md",
     "src/index.css",
     "src/style.css",
@@ -162,7 +163,6 @@
     "Code/python/Flask/入门Flask.md",
     "Code/刷题/华为机试/z.说明.md",
     "Code/python/Flask",
-    "README.md",
     "Miscellaneous/asset/面试路线2.jpg",
     "Code/刷题/华为机试/wHJ44 Sudoku.md",
     "Miscellaneous/asset/面试路线1.jpg",
