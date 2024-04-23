@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/python/Flask/入门Flask.md",
+                "file": "Miscellaneous/2024-4-24面试1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/python/Flask/入门Flask.md",
+                "file": "Miscellaneous/2024-4-24面试1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/python/Flask/入门Flask.md",
+                "file": "Miscellaneous/2024-4-24面试1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/python/Flask/入门Flask.md"
+                "file": "Miscellaneous/2024-4-24面试1.md"
               }
             }
           }
@@ -150,6 +150,8 @@
   },
   "active": "44839cef039b803c",
   "lastOpenFiles": [
+    "Code/python/Flask/入门Flask.md",
+    "Miscellaneous/2024-4-24面试1.md",
     "README.md",
     "Miscellaneous/魔法教程.md",
     "Code/刷题/华为机试/wHJ70 矩阵乘法计算量估算.md",
@@ -161,7 +163,6 @@
     "Code/刷题/华为机试/wHJ71 字符串通配符.md",
     "Code/数据结构与算法/图论的一些问题与解答.md",
     "Code/刷题/华为机试/asset/HJ64_描述图片.png",
-    "Code/python/Flask/入门Flask.md",
     "Code/刷题/华为机试/z.说明.md",
     "Code/python/Flask",
     "Miscellaneous/asset/面试路线2.jpg",
@@ -188,7 +189,6 @@
     "Code/刷题/华为机试/wHJ98 自动售货系统.md",
     "Code/刷题/华为机试/HJ57 高精度整数加法.md",
     "Code/python/python常用方法/map().md",
-    "Code/刷题/华为机试/wHJ67 24点游戏算法.md",
     "Miscellaneous/asset/Pasted image 20240417174019.png",
     "Miscellaneous/asset/面试准备_路线图.jpg",
     "Code/刷题/华为机试/asset/HJ44_数独输出.png",
