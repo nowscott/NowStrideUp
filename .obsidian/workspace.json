@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "183197d60ba6a2a7",
@@ -146,7 +145,7 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": true,
       "obsidian-regex-pipeline:Regex Rulesets": true,
-      "hidden-folder-obsidian:显示文件夹": false
+      "hidden-folder-obsidian:显示文件夹": true
     }
   },
   "active": "44839cef039b803c",
