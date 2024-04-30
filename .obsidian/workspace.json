@@ -139,14 +139,12 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-regex-pipeline:Regex Rulesets": true,
       "switcher:打开快速切换": true,
       "graph:查看关系图谱": false,
       "canvas:新建白板": true,
       "daily-notes:打开/创建今天的日记": true,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": true,
-      "hidden-folder-obsidian:显示文件夹": false
+      "command-palette:打开命令面板": true
     }
   },
   "active": "44839cef039b803c",
