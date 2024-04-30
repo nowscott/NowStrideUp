@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Miscellaneous/2024-4-24面试1.md",
+                "file": "Code/python/python模块/moviepy.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Miscellaneous/2024-4-24面试1.md",
+                "file": "Code/python/python模块/moviepy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Miscellaneous/2024-4-24面试1.md",
+                "file": "Code/python/python模块/moviepy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Miscellaneous/2024-4-24面试1.md"
+                "file": "Code/python/python模块/moviepy.md"
               }
             }
           }
@@ -134,7 +134,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -150,8 +151,9 @@
   },
   "active": "44839cef039b803c",
   "lastOpenFiles": [
-    "Code/python/Flask/入门Flask.md",
     "Miscellaneous/2024-4-24面试1.md",
+    "Code/python/python模块/moviepy.md",
+    "Code/python/Flask/入门Flask.md",
     "README.md",
     "Miscellaneous/魔法教程.md",
     "Code/刷题/华为机试/wHJ70 矩阵乘法计算量估算.md",
@@ -188,7 +190,6 @@
     "Code/刷题/华为机试/HJ61 放苹果.md",
     "Code/刷题/华为机试/wHJ98 自动售货系统.md",
     "Code/刷题/华为机试/HJ57 高精度整数加法.md",
-    "Code/python/python常用方法/map().md",
     "Miscellaneous/asset/Pasted image 20240417174019.png",
     "Miscellaneous/asset/面试准备_路线图.jpg",
     "Code/刷题/华为机试/asset/HJ44_数独输出.png",
