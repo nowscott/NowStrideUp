@@ -146,7 +146,7 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": true,
       "obsidian-regex-pipeline:Regex Rulesets": true,
-      "hidden-folder-obsidian:显示文件夹": true
+      "hidden-folder-obsidian:显示文件夹": false
     }
   },
   "active": "44839cef039b803c",
