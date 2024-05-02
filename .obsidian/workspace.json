@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/python/未命名.md",
+                "file": "Code/python/数据分析/【python数据分析】01-准备工作.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "183197d60ba6a2a7",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/python/未命名.md",
+                "file": "Code/python/数据分析/【python数据分析】01-准备工作.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/python/未命名.md",
+                "file": "Code/python/数据分析/【python数据分析】01-准备工作.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/python/未命名.md"
+                "file": "Code/python/数据分析/【python数据分析】01-准备工作.md"
               }
             }
           }
@@ -152,6 +153,8 @@
   "active": "a1eb91500a873639",
   "lastOpenFiles": [
     "Code/python/python模块/moviepy.md",
+    "Code/python/数据分析/【python数据分析】01-准备工作.md",
+    "Code/python/数据分析",
     "Code/python/未命名.md",
     "Miscellaneous/2024-4-24面试1.md",
     "Code/python/Flask/入门Flask.md",
@@ -189,12 +192,10 @@
     "Code/刷题/华为机试/HJ32 密码截取.md",
     "Code/刷题/华为机试/HJ16 购物单.md",
     "Code/刷题/华为机试/HJ61 放苹果.md",
-    "Code/刷题/华为机试/wHJ98 自动售货系统.md",
     "Miscellaneous/asset/Pasted image 20240417174019.png",
     "Miscellaneous/asset/面试准备_路线图.jpg",
     "Code/刷题/华为机试/asset/HJ44_数独输出.png",
     "Code/刷题/华为机试/asset/HJ66_描述图片.png",
-    "Code/刷题/华为机试/asset",
     "Pasted image 20240412122434.png"
   ]
 }
