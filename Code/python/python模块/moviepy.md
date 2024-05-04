@@ -504,7 +504,7 @@ animation = VideoClip(make_frame, duration=duration)
 animation.write_gif('matplotlib.gif', fps=20)
 ```
 
-## 在 Jupyter Notebook 中工作
+### 在 Jupyter Notebook 中工作
 
 如果您在 Jupyter Notebook 中工作，则可以利用以下事实：VideoClips 可以通过 ipython_display 方法嵌入到 Notebook 的输出单元中。
 
@@ -541,15 +541,15 @@ animation = VideoClip(make_frame, duration=duration)
 animation.write_gif('matplotlib.gif', fps=20)
 ```
 
-### MoviePy 中的音频
+## MoviePy 中的音频
 
 本节介绍如何使用 MoviePy 创建和编辑音频剪辑。
 
-#### 音频剪辑的构成
+### 音频剪辑的构成
 
 音频剪辑与 MoviePy 中的视频剪辑非常相似：它们具有长度，可以进行剪切和合成等操作。一个显著的区别是音频剪辑只包含音频部分，而视频剪辑则包含音频和视频。
 
-#### 创建新的音频剪辑
+### 创建新的音频剪辑
 
 音频剪辑可以从音频文件或视频文件的音轨中创建。
 
@@ -564,7 +564,7 @@ videoclip = VideoFileClip("some_video.avi")
 audioclip = videoclip.audio
 ```
 
-#### 合成音频剪辑
+### 合成音频剪辑
 
 您可以将多个音频剪辑合成为一个剪辑，方法是使用 `CompositeAudioClip`。
 
@@ -575,7 +575,7 @@ from moviepy.editor import *
 composite_clip = CompositeAudioClip([audioclip1, audioclip2])
 ```
 
-#### 导出和预览音频剪辑
+### 导出和预览音频剪辑
 
 您可以将音频剪辑导出为音频文件，并在 MoviePy 中预览音频剪辑。
 
