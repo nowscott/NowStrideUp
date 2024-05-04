@@ -706,3 +706,53 @@ myclip = TextClip("Hello", fontsize=70, stroke_width=5).resize(height=15)
 
 TextClips 提供许多选项，如对齐、字间距（字母之间的距离）、笔画大小、背景、自动换行等。更多详细信息，请参阅 [`TextClip`](https://moviepy.readthedocs.io/en/latest/ref/VideoClip/VideoClip.html#moviepy.video.VideoClip.TextClip)。
 
+### Mask clips 蒙版剪辑
+
+蒙版是一种特殊的视频剪辑，用于指示在将带有此蒙版的视频剪辑与其他视频剪辑合成时哪些像素可见（参见[混合剪辑]（））。当您将剪辑导出为 GIF 文件或 PNG 文件时，蒙版也用于定义透明度。
+
+与标准剪辑不同，标准剪辑的每个像素输出包含三个分量（R-G-B），范围在 0 到 255 之间，而蒙版的每个像素只有一个分量，范围在 0 到 1 之间（1 表示像素完全可见，0 表示像素透明）。换句话说，蒙版始终是灰度的。
+
+创建或加载将用作蒙版的剪辑时，需要如下声明：
+
+```python
+maskclip = VideoClip(make_frame, duration=4, is_mask=True)
+maskclip = ImageClip("my_mask.jpeg", is_mask=True)
+maskclip = VideoFileClip("myvideo.mp4", is_mask=True)
+```
+
+对于视频和图像文件，如果它们原本不是黑白的，系统将自动将它们转换为黑白。
+
+然后，您可以使用 `myclip.with_mask(maskclip)` 将此蒙版附加到与之尺寸相同的另一个剪辑上。
+
+一些图像格式，如 PNG，支持带有 alpha 层的透明度，MoviePy 将使用这个 alpha 层作为蒙版：
+
+```python
+myclip = ImageClip("image.png", transparent=True)  # 默认为 True
+myclip.mask  # <- 图片的 alpha 层
+```
+
+任何视频剪辑都可以通过 `clip.to_mask()` 转换为蒙版，蒙版也可以通过 `my_mask_clip.to_RGB()` 转换为标准的 RGB 视频剪辑。
+
+蒙版由于其帧的不同，很多方法对它们的处理也不同，但您可以对蒙版进行几乎所有标准剪辑能做的操作，如剪切、编辑、预览、写入视频文件、制作快照等。
+
+### 导出视频剪辑
+
+视频文件（.mp4、.webm、.ogv…）可以通过以下方法写入视频文件：
+
+```python
+my_clip.write_videofile("movie.mp4")  # 默认编解码器: 'libx264', 24 fps
+my_clip.write_videofile("movie.mp4", fps=15)
+my_clip.write_videofile("movie.webm")  # webm 格式
+my_clip.write_videofile("movie.webm", audio=False)  # 不渲染音频
+```
+
+MoviePy 对最常见的文件扩展名有默认的编解码器名称。如果您想使用特殊格式或对默认设置不满意，可以指定编解码器，例如 `codec='mpeg4'`。写视频时有许多选项，如比特率、音频编写的参数、文件大小优化、使用的处理器数量等。更多详细信息，请参阅 [`write_videofile()`](https://moviepy.readthedocs.io/en/latest/ref/VideoClip/VideoClip.html#moviepy.video.VideoClip.VideoClip.write_videofile)。
+
+有时，MoviePy 无法猜测剪辑的持续时间属性（请记住，某些剪辑如显示图片的 ImageClip，默认具有无限持续时间）。这种情况下，必须手动设置持续时间：
+
+```python
+# 制作一个视频，显示一朵花5秒钟
+my_clip = ImageClip("flower.jpeg")  # 默认无限持续时间
+my_clip.write_videofile("flower.mp4")  # 会失败！没有设置持续时间！
+my_clip.with_duration(5).write_videofile("flower.mp4")  # 成功！
+```
