@@ -147,3 +147,78 @@ final_clip.resize(width=480).write_videofile("my_stack.mp4")
 您将获得一个类似以下的剪辑：
 
 ![[剪辑效果展示.jpg]]
+
+#### 复合视频剪辑
+
+复合视频剪辑提供了一种非常灵活的方式来组合剪辑，但比 concatenate_videoclips 和 clips_array 更复杂。
+
+```python
+video = CompositeVideoClip([clip1, clip2, clip3])
+```
+
+现在 video 播放 clip1，然后在 clip1 上播放 clip2，在 clip1 和 clip2 上播放 clip3。例如，如果 clip2 和 clip3 与 clip1 具有相同的大小，则视频中只有位于顶部的 clip3 可见……除非 clip3 和 clip2 具有隐藏它们部分的遮罩。请注意，默认情况下，合成的大小与其第一个剪辑的大小相同（因为它通常是背景）。但是有时您可能希望在更大的合成中浮动剪辑，因此您可以指定最终合成的大小如下：
+
+```python
+video = CompositeVideoClip([clip1, clip2, clip3], size=(720, 460))
+```
+
+##### 开始和停止时间
+
+在 CompositionClip 中，所有剪辑都在 clip.start 属性指定的时间开始播放。您可以按如下方式设置此开始时间：
+
+```python
+clip1 = clip1.with_start(5) # 在 5 秒后开始
+```
+
+因此，例如您的合成将如下所示：
+
+```python
+video = CompositeVideoClip([
+	clip1, # 从 t=0 开始
+    clip2.with_start(5), # 从 t=5s 开始
+    clip3.with_start(9) # 从 t=9s 开始
+]) 
+```
+
+在上面的示例中，也许 clip2 将在 clip1 结束之前开始。在这种情况下，您可以使 clip2 以一秒的淡入效果出现：
+
+```python
+video = CompositeVideoClip([
+    clip1, # 从 t=0 开始
+    clip2.with_start(5).crossfadein(1), # 从 t=5s 开始并淡入1秒
+    clip3.with_start(9).crossfadein(1.5) # 从 t=9s 开始并淡入1.5秒
+])
+``` 
+##### 定位夹
+
+如果 clip2 和 clip3 小于 clip1，您可以通过设置它们的位置来决定它们在合成中的显示位置。这里我们指定剪辑左上角像素的坐标：
+
+```python
+video = CompositeVideoClip([
+    clip1,
+    clip2.with_position((45,150)),
+    clip3.with_position((90,100))
+])
+```
+
+有许多指定位置的方法：
+
+```python
+clip2.with_position((45,150)) # x=45, y=150 , 以像素为单位
+
+clip2.with_position("center") # 自动居中
+
+# clip2 水平居中，位于图片的顶部
+clip2.with_position(("center","top"))
+
+# clip2 垂直居中，位于图片的左侧
+clip2.with_position(("left","center"))
+
+# clip2 位于屏幕宽度的40%，高度的70%：
+clip2.with_position((0.4,0.7), relative=True)
+
+# clip2 的位置水平居中，向下移动！
+clip2.with_position(lambda t: ('center', 50+t) )
+```
+
+在指定位置时，请记住 y 坐标的零点位于图片的顶部。
