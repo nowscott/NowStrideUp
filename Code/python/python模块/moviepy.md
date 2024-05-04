@@ -440,6 +440,7 @@ my_video_clip.ipython_display()
 您还可以提供任何有效的 HTML5 选项作为关键字参数，例如指定宽度、自动播放或循环。
 
 重要的是，`ipython_display` 实际上将剪辑物理嵌入到您的笔记本中。优点是您可以移动或在线发布笔记本，视频仍然可以正常播放。缺点是笔记本的文件大小可能会变得非常大，但重新启动浏览器可以解决这个问题。
+
 ## 使用 matplotlib
 
 ### 定义自定义动画
@@ -478,18 +479,28 @@ import numpy as np
 from moviepy import VideoClip
 from moviepy.video.io.bindings import mplfig_to_npimage
 
+# 生成 x 值
 x = np.linspace(-2, 2, 200)
 
+# 动画持续时间
 duration = 2
 
+# 创建 Matplotlib 图形对象
 fig, ax = plt.subplots()
+
+# 定义生成帧的函数
 def make_frame(t):
     ax.clear()
+    # 绘制图形
     ax.plot(x, np.sinc(x**2) + np.sin(x + 2*np.pi/duration * t), lw=3)
     ax.set_ylim(-1.5, 2.5)
+    # 将 Matplotlib 图形转换为 numpy 数组
     return mplfig_to_npimage(fig)
 
+# 创建 VideoClip 对象
 animation = VideoClip(make_frame, duration=duration)
+
+# 将动画导出为 GIF 文件
 animation.write_gif('matplotlib.gif', fps=20)
 ```
 
@@ -528,4 +539,46 @@ animation = VideoClip(make_frame, duration=duration)
 
 # 将动画导出为 GIF 文件
 animation.write_gif('matplotlib.gif', fps=20)
+```
+
+### MoviePy 中的音频
+
+本节介绍如何使用 MoviePy 创建和编辑音频剪辑。
+
+#### 音频剪辑的构成
+
+音频剪辑与 MoviePy 中的视频剪辑非常相似：它们具有长度，可以进行剪切和合成等操作。一个显著的区别是音频剪辑只包含音频部分，而视频剪辑则包含音频和视频。
+
+#### 创建新的音频剪辑
+
+音频剪辑可以从音频文件或视频文件的音轨中创建。
+
+```python
+from moviepy.editor import *
+
+# 从音频文件创建
+audioclip = AudioFileClip("some_audiofile.mp3")
+
+# 从视频文件的音轨中创建
+videoclip = VideoFileClip("some_video.avi")
+audioclip = videoclip.audio
+```
+
+#### 合成音频剪辑
+
+您可以将多个音频剪辑合成为一个剪辑，方法是使用 `CompositeAudioClip`。
+
+```python
+from moviepy.editor import *
+
+# 合成多个音频剪辑
+composite_clip = CompositeAudioClip([audioclip1, audioclip2])
+```
+
+#### 导出和预览音频剪辑
+
+您可以将音频剪辑导出为音频文件，并在 MoviePy 中预览音频剪辑。
+
+```python
+videoclip2 = videoclip.with_audio(my_audioclip)
 ```
