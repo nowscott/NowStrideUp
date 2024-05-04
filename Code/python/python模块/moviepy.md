@@ -613,7 +613,7 @@ clip = AudioClip(make_frame, duration=3)  # 使用函数 make_frame(t)
 ### 视频剪辑的类别
 
 视频剪辑是较长视频的基石。从技术上讲，它们是具有 clip.get_frame(t) 方法的剪辑，该方法输出表示时间 t 的剪辑帧的 HxWx3 numpy 数组。主要有两类：动画剪辑（由 VideoFileClip 和 VideoClip 制作）和非动画剪辑，这些剪辑显示相同的图片，理论上持续时间无限长（如 ImageClip、TextClip、ColorClip）。还有特殊的视频剪辑称为遮罩剪辑，属于上述类别，但输出灰度帧，显示另一个剪辑的哪些部分可见或不可见。视频剪辑可以携带音频剪辑（其音轨）和遮罩剪辑。
-### VideoClip 录像片段
+### VideoClip录像片段
 
 VideoClip 是 MoviePy 中所有其他视频剪辑的基类。如果您的目的仅是编辑视频文件，则不需要使用这个类。当您希望从另一个库生成的帧制作动画时，这个类非常有用。您需要定义一个函数 `make_frame(t)`，它返回一个 HxWx3 的 numpy 数组（8 位整数），代表时间 t 的帧。下面是使用图形库 Gizeh 的一个示例：
 
@@ -635,7 +635,7 @@ clip.write_gif("circle.gif", fps=15)
 ```
 ![[circle.gif]]
 请注意，使用 `make_frame` 创建的剪辑没有明确的帧速率，因此在使用 `write_gif` 和 `write_videofile` 以及任何需要遍历帧的方法时，您必须提供帧速率（fps，每秒帧数）。
-### VideoFileClip 视频文件剪辑
+### VideoFileClip视频文件剪辑
 
 VideoFileClip 是从视频文件（支持大多数格式）或 GIF 文件读取的剪辑。加载视频的方式如下：
 
@@ -654,4 +654,55 @@ myclip2 = myclip.subclip(10, 25)
 myclip2.write_gif("test.gif")  # 这个 gif 将有 30 fps
 ```
 
-有关更多信息，请参阅 [`VideoFileClip`]()
+有关更多信息，请参阅 [`VideoFileClip`](https://moviepy.readthedocs.io/en/latest/ref/VideoClip/VideoClip.html#moviepy.video.io.VideoFileClip.VideoFileClip)
+
+### ImageSequenceClip 图像序列剪辑
+
+ImageSequenceClip 是由一系列图像组成的剪辑，您可以通过以下方式创建它：
+
+```python
+clip = ImageSequenceClip(images_list, fps=25)
+```
+
+其中 `images_list` 可以是按顺序播放的图像名称列表、文件夹名称（在这种情况下，文件夹中的所有图像文件将按字母数字顺序播放）或帧列表（Numpy 数组），例如从其他剪辑获取。
+
+当您提供文件夹名称或文件名列表时，可以选择 `load_images=True` 参数来指定应将所有图像加载到 RAM 中。这种方法适用于您有少量图像且每个图像都会多次使用的情况（例如，图像形成循环动画）。
+
+### ImageClip 图像剪辑
+
+ImageClip 是一种始终显示相同图像的视频剪辑。您可以通过以下几种方式创建：
+
+```python
+myclip = ImageClip("some_picture.jpeg")
+myclip = ImageClip(some_array)  # 一个 (高 x 宽 x 3) RGB numpy 数组
+myclip = some_video_clip.to_ImageClip(t='01:00:00')  # 在时间点 t=1 小时的帧
+```
+
+有关更多信息，请参阅 [`ImageClip`](https://moviepy.readthedocs.io/en/latest/ref/VideoClip/VideoClip.html#moviepy.video.VideoClip.ImageClip)。
+
+下面展示的两个 ImageClip 示例是 TextClip 和 ColorClip。
+
+### TextClip 文本剪辑
+
+生成 TextClip 需要安装 ImageMagick，并（对于 Windows 用户）需要将其链接到 MoviePy。具体安装说明请参阅官方文档。
+
+创建文本剪辑的方法如下（您可能不需要使用所有这些选项）：
+
+```python
+myclip = TextClip("Hello", font='Amiri-Bold')
+```
+
+字体可以是计算机上安装的任何字体，但 ImageMagick 会有特定的命名。例如，Amiri 字体通常称为 Amiri-Regular，而 Impact 字体称为 Impact-Normal。要获取可能的字体列表，可以使用 `TextClip.list('font')`。要查找与特定字体相关的所有字体名称，可以使用：
+
+```python
+TextClip.search('Amiri', 'font')  # 返回包含 Amiri 的所有字体名称
+```
+
+请注意，使用笔画（或轮廓）在小字母上效果不佳，因此如果您需要带轮廓的小文本，最好是生成大号文本后再缩小：
+
+```python
+myclip = TextClip("Hello", fontsize=70, stroke_width=5).resize(height=15)
+```
+
+TextClips 提供许多选项，如对齐、字间距（字母之间的距离）、笔画大小、背景、自动换行等。更多详细信息，请参阅 [`TextClip`](https://moviepy.readthedocs.io/en/latest/ref/VideoClip/VideoClip.html#moviepy.video.VideoClip.TextClip)。
+
