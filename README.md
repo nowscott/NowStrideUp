@@ -109,6 +109,7 @@ createDate: 2024-04-11 11:24
       - [sys.md](Code/python/python%E6%A8%A1%E5%9D%97/sys.md)
       - [re.md](Code/python/python%E6%A8%A1%E5%9D%97/re.md)
       - [random.md](Code/python/python%E6%A8%A1%E5%9D%97/random.md)
+      - [moviepy.md](Code/python/python%E6%A8%A1%E5%9D%97/moviepy.md)
       - [math.md](Code/python/python%E6%A8%A1%E5%9D%97/math.md)
     - python常用方法
       - [zfill().md](Code/python/python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/zfill%28%29.md)
