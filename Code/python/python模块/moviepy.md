@@ -583,37 +583,31 @@ composite_clip = CompositeAudioClip([audioclip1, audioclip2])
 videoclip2 = videoclip.with_audio(my_audioclip)
 ```
 
-### 创建和导出视频剪辑
+## 创建和导出视频剪辑
 
-本节介绍 MoviePy 中创建和导出视频剪辑的方法。
+视频和音频剪辑是 MoviePy 的核心对象。本节将介绍不同类型的剪辑、创建它们的方法及其写入文件的方式。关于修改剪辑（剪切、效果等）的信息，请参阅“剪辑变换和效果”。要了解如何组合剪辑，请参阅“混合剪辑”；要了解如何在写入文件之前预览剪辑，请参阅“如何高效使用 MoviePy”。
 
-#### 视频剪辑简介
+以下代码总结了您可以使用 moviepy 创建的基本剪辑：
 
-视频和音频剪辑是 MoviePy 的核心对象。在本节中，我们将介绍不同类型的剪辑、如何创建它们以及如何将它们写入文件。有关修改剪辑（剪切、效果等）的信息，请参阅剪辑变换和效果。有关如何将剪辑放在一起的信息，请参阅混合剪辑，并了解如何在写入文件之前预览剪辑，请参阅如何高效使用 MoviePy。
+### 视频剪辑
+```python
+clip = VideoClip(make_frame, duration=4)  # 用于自定义动画
+clip = VideoFileClip("my_video_file.mp4")  # 可为.mp4、.avi、.webm、.gif等格式
+clip = ImageSequenceClip(['image_file1.jpeg', ...], fps=24)
+clip = ImageClip("my_picture.png")  # 可为.png、.jpeg、.tiff等格式
+clip = TextClip("Hello!", font="Amiri-Bold", fontsize=70, color="black")
+clip = ColorClip(size=(460,380), color=[R,G,B])
+```
 
-#### 创建视频剪辑
+### 音频剪辑
+```python
+clip = AudioFileClip("my_audiofile.mp3")  # 可为.mp3、.ogg、.wav等格式，或视频
+clip = AudioArrayClip(numpy_array, fps=44100)  # 来自数字数组
+clip = AudioClip(make_frame, duration=3)  # 使用函数 make_frame(t)
+```
 
-您可以使用 MoviePy 创建各种类型的视频剪辑，下面是一些基本的创建方法示例：
+了解这些剪辑的最佳方式是阅读参考手册中每个剪辑的详细文档。在本节中，我们会探索如何创建剪辑（例如从视频或音频文件中获取），如何将它们混合以及如何将它们写入文件。
 
-- 通过自定义动画函数创建：`VideoClip(make_frame, duration=4)`
-- 从视频文件创建：`VideoFileClip("my_video_file.mp4")`
-- 从图像序列创建：`ImageSequenceClip(['image_file1.jpeg', ...], fps=24)`
-- 从单个图像创建：`ImageClip("my_picture.png")`
-- 生成文本剪辑：`TextClip("Hello!", font="Amiri-Bold", fontsize=70, color="black")`
-- 生成纯色剪辑：`ColorClip(size=(460,380), color=[R,G,B])`
+### 视频剪辑的类别
 
-详细信息请参阅相应的文档。
-
-#### 视频剪辑类别
-
-视频剪辑可以分为两类：动画剪辑和静态剪辑。动画剪辑由 VideoFileClip 和 VideoClip 创建，而静态剪辑则由 ImageClip、TextClip 和 ColorClip 创建。此外，还有一种特殊的视频剪辑称为蒙版剪辑，它用于定义其他剪辑中可见或不可见的部分。
-
-#### 导出视频剪辑
-
-您可以将视频剪辑导出为视频文件、GIF 动画或单个帧图像。MoviePy 提供了多种导出选项，例如：
-
-- 将剪辑写入视频文件：`write_videofile()`
-- 将剪辑写入 GIF 动画：`write_gif()`
-- 将剪辑的帧保存为图像文件：`save_frame()`
-
-通过指定不同的参数，您可以自定义导出的视频文件格式、质量和帧率等。详细信息请参阅相应的文档。
+视频剪辑是较长视频的基石。从技术上讲，它们是具有 clip.get_frame(t) 方法的剪辑，该方法输出表示时间 t 的剪辑帧的 HxWx3 numpy 数组。主要有两类：动画剪辑（由 VideoFileClip 和 VideoClip 制作）和非动画剪辑，这些剪辑显示相同的图片，理论上持续时间无限长（如 ImageClip、TextClip、ColorClip）。还有特殊的视频剪辑称为遮罩剪辑，属于上述类别，但输出灰度帧，显示另一个剪辑的哪些部分可见或不可见。视频剪辑可以携带音频剪辑（其音轨）和遮罩剪辑。
