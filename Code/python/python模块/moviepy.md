@@ -242,3 +242,22 @@ compo = CompositeAudioClip([
 ``` 
 
 这样可以根据需要自定义合成音频剪辑，以便满足特定的需求。
+
+### 剪辑变换和效果
+MoviePy 中的剪辑修改有几类：
+
+1. **常见方法**：用于更改剪辑属性的常见方法，如 `clip.with_duration`、`clip.with_audio`、`clip.with_mask`、`clip.with_start` 等。
+
+2. **已经实现的效果**：核心效果（如 `clip.subclip(t1, t2)`，保留 t1 和 t2 之间的剪辑）作为类方法实现。更高级和不太常见的效果（如 `loop`，使剪辑循环播放，或 `time_mirror`，使剪辑向后播放）放置在特殊模块 `moviepy.video.fx` 和 `moviepy.audio.fx` 中，并通过 `clip.fx` 方法应用。例如 `clip.fx(time_mirror)`（使剪辑向后播放）、`clip.fx(black_white)`（将剪辑转换为黑白），等等。
+
+3. **您可以自己创造的效果**：您可以创建自定义效果，使用 `fx` 方法。
+
+所有这些效果都具有一个共同点，即它们不是就地修改：它们不会修改原始剪辑，而是创建一个新剪辑，该剪辑是对前一个剪辑应用了更改的版本。例如：
+
+```python
+my_clip = VideoFileClip("some_file.mp4")
+my_clip.with_start(t=5) # 不起作用，更改将丢失
+my_new_clip = my_clip.with_start(t=5) # 好的！
+```
+
+另外，当您编写 `clip.resize(width=640)` 时，它不会立即将效果应用于剪辑的所有帧，而是仅应用于第一帧：所有其他帧只会在需要时（即当您将整个剪辑写入文件或预览时）进行调整大小。换句话说，创建新剪辑既不耗费时间也不耗费内存，所有计算都在最终渲染期间发生。
