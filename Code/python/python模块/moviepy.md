@@ -311,7 +311,9 @@ clip = (VideoFileClip("myvideo.avi")
 使用 clip.time_transform，您可以修改剪辑的时间线，例如：
 
 ```python
+# 将剪辑的时间线加速三倍
 modifiedClip1 = my_clip.time_transform(lambda t: 3*t)
+# 让剪辑的时间线在 t=0s 和 t=2s 之间振荡播放
 modifiedClip2 = my_clip.time_transform(lambda t: 1+sin(t))
 ```
 
@@ -320,6 +322,7 @@ modifiedClip2 = my_clip.time_transform(lambda t: 1+sin(t))
 使用 clip.image_transform，您可以修改剪辑的显示方式，例如：
 
 ```python
+# 反转剪辑的绿色和蓝色通道
 def invert_green_blue(image):
     return image[:,:,[0,2,1]]
 
@@ -331,8 +334,8 @@ modifiedClip = my_clip.image_transform(invert_green_blue)
 ```python
 def scroll(get_frame, t):
     """
-    This function returns a 'region' of the current frame.
-    The position of this region depends on the time.
+    返回当前帧的 '区域'。
+    该区域的位置取决于时间。
     """
     frame = get_frame(t)
     frame_region = frame[int(t):int(t)+360,:]
@@ -356,3 +359,173 @@ modifiedClip = my_clip.transform(scroll)
 - 如果安装了 pygame，则启动 pygame 会话以启用 clip.show() 和 clip.preview()
 - 如果在 IPython Notebook 中，则启用 clip.ipython_display()
 - 如果安装了 Matplotlib，则启用 sliders()
+### 何时关闭()剪辑
+
+当您创建某些类型的剪辑实例 - 例如 VideoFileClip 或 AudioFileClip - MoviePy 会创建一个子进程并锁定文件。为了在使用完后释放这些资源，您应该调用 close() 方法。
+
+这对于更复杂的应用程序更为重要，特别是在 Windows 上运行时。虽然 Python 的垃圾收集器最终应该为您清理资源，但关闭它们可以让它们更早地可用。
+
+然而，如果您过早关闭剪辑，剪辑上的方法（以及从它派生的任何剪辑）将变得不安全。
+
+因此，经验法则是：
+
+- 一旦您使用完您构建的任何剪辑以及使用从该剪辑派生的任何剪辑，就可以调用 close() 。
+- 即使您关闭 CompositeVideoClip 实例，您仍然需要关闭创建它的剪辑。
+- 否则，如果您有一个通过从另一个剪辑派生而创建的剪辑（例如通过调用 with_mask() ），那么通常您不应该关闭它。关闭原始剪辑也会关闭副本。
+
+剪辑充当上下文管理器。这意味着您可以将它们与 with 语句一起使用，并且即使存在异常，它们也会在块末尾自动关闭。
+
+```python
+with AudioFileClip("song.wav") as clip:
+    raise NotImplementedError("稍后我将解决如何处理这首歌曲")
+# clip.close() 隐式调用，因此 song.wav 文件的锁立即被释放。
+```
+### 预览剪辑的多种方式
+
+当您编辑视频或尝试通过 MoviePy 实现效果时，通过反复试验生成视频可能会非常耗时。本节介绍了一些加快速度的技巧。
+
+#### 剪辑保存
+
+大多数情况下，只需要视频的一帧就足以告诉您是否正确操作。您可以将剪辑的一帧保存到文件中，方法如下：
+
+```python
+# 保存第一帧
+my_clip.save_frame("frame.jpeg") 
+# 保存 t=2s 处的帧
+my_clip.save_frame("frame.png", t=2) 
+```
+
+#### 剪辑显示和预览
+
+方法 `clip.show()` 和 `clip.preview()` 可以在 Pygame 窗口中预览剪辑。它们是最快的预览方式，因为剪辑是同时生成和显示的，并且对于获取像素的坐标或颜色非常有用。这些方法需要安装 PyGame 并使用 `moviepy.editor` 模块。
+
+```python
+# 在 Pygame 窗口中显示第一帧
+my_clip.show() 
+# 在 Pygame 窗口中显示 t=10.5s 处的帧
+my_clip.show(10.5) 
+# 以交互方式显示帧，点击后打印像素的位置和颜色
+my_clip.show(10.5, interactive=True) 
+```
+
+```python
+# 预览剪辑，默认帧率为 15fps
+my_clip.preview() 
+# 预览剪辑，帧率设置为 25fps
+my_clip.preview(fps=25) 
+# 预览剪辑，不生成/播放音频
+my_clip.preview(fps=15, audio=False) 
+```
+
+#### IPython 显示
+
+在 IPython Notebook 中显示剪辑非常方便，尤其是如果您不想使用 `clip.show()` 和 `clip.preview()`。您可以嵌入视频、图像和声音，可以来自文件或直接来自剪辑。
+
+```python
+# 嵌入视频、图像和声音
+ipython_display(my_video_clip) 
+ipython_display(my_imageclip) 
+ipython_display(my_audio_clip) 
+# 嵌入文件中的视频、图像和声音
+ipython_display("my_picture.jpeg") 
+ipython_display("my_video.mp4") 
+ipython_display("my_sound.mp3") 
+```
+
+```python
+# 将剪辑嵌入 IPython Notebook 中显示
+my_video_clip.ipython_display()
+```
+
+您还可以提供任何有效的 HTML5 选项作为关键字参数，例如指定宽度、自动播放或循环。
+
+重要的是，`ipython_display` 实际上将剪辑物理嵌入到您的笔记本中。优点是您可以移动或在线发布笔记本，视频仍然可以正常播放。缺点是笔记本的文件大小可能会变得非常大，但重新启动浏览器可以解决这个问题。
+## 使用 matplotlib
+
+### 定义自定义动画
+
+MoviePy 允许您通过定义一个函数来生成自定义动画，该函数以 numpy 数组的形式返回动画给定时间的帧。
+
+下面是此工作流程的示例：
+
+```python
+from moviepy import VideoClip
+
+def make_frame(t):
+    """返回时间 t 的帧图像。"""
+    # ... 在此处使用任何库创建帧 ...
+    return frame_for_time_t  # (Height x Width x 3) Numpy 数组
+
+animation = VideoClip(make_frame, duration=3)  # 3 秒剪辑
+```
+
+然后可以通过通常的 MoviePy 方式导出该动画：
+
+```python
+# 导出为视频文件
+animation.write_videofile("my_animation.mp4", fps=24)
+# 导出为 GIF
+animation.write_gif("my_animation.gif", fps=24)  # 通常较慢
+```
+
+### 简单的 matplotlib 示例
+
+以下是使用 matplotlib 创建动画的示例：
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+from moviepy import VideoClip
+from moviepy.video.io.bindings import mplfig_to_npimage
+
+x = np.linspace(-2, 2, 200)
+
+duration = 2
+
+fig, ax = plt.subplots()
+def make_frame(t):
+    ax.clear()
+    ax.plot(x, np.sinc(x**2) + np.sin(x + 2*np.pi/duration * t), lw=3)
+    ax.set_ylim(-1.5, 2.5)
+    return mplfig_to_npimage(fig)
+
+animation = VideoClip(make_frame, duration=duration)
+animation.write_gif('matplotlib.gif', fps=20)
+```
+
+## 在 Jupyter Notebook 中工作
+
+如果您在 Jupyter Notebook 中工作，则可以利用以下事实：VideoClips 可以通过 ipython_display 方法嵌入到 Notebook 的输出单元中。
+
+以下是上述示例在 Jupyter Notebook 中的应用：
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+from moviepy import VideoClip
+from moviepy.video.io.bindings import mplfig_to_npimage
+
+# 生成 x 值
+x = np.linspace(-2, 2, 200)
+
+# 动画持续时间
+duration = 2
+
+# 创建 Matplotlib 图形对象
+fig, ax = plt.subplots()
+
+# 定义生成帧的函数
+def make_frame(t):
+    ax.clear()
+    # 绘制图形
+    ax.plot(x, np.sinc(x**2) + np.sin(x + 2*np.pi/duration * t), lw=3)
+    ax.set_ylim(-1.5, 2.5)
+    # 将 Matplotlib 图形转换为 numpy 数组
+    return mplfig_to_npimage(fig)
+
+# 创建 VideoClip 对象
+animation = VideoClip(make_frame, duration=duration)
+
+# 将动画导出为 GIF 文件
+animation.write_gif('matplotlib.gif', fps=20)
+```
