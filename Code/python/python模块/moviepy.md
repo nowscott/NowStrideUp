@@ -189,7 +189,7 @@ video = CompositeVideoClip([
     clip3.with_start(9).crossfadein(1.5) # 从 t=9s 开始并淡入1.5秒
 ])
 ``` 
-##### 定位夹
+##### 设置剪辑位置
 
 如果 clip2 和 clip3 小于 clip1，您可以通过设置它们的位置来决定它们在合成中的显示位置。这里我们指定剪辑左上角像素的坐标：
 
@@ -222,3 +222,23 @@ clip2.with_position(lambda t: ('center', 50+t) )
 ```
 
 在指定位置时，请记住 y 坐标的零点位于图片的顶部。
+
+![[坐标示意图.jpg]]
+
+##### 合成音频剪辑​​
+当您将视频剪辑混合在一起时，MoviePy 会自动合成它们各自的音轨以形成最终剪辑的音轨，因此您无需担心自己合成这些音轨。
+
+如果您想从多个音频源制作自定义音轨：音频剪辑可以使用 CompositeAudioClip 和 concatenate_audioclips 混合在一起：
+
+```python
+from moviepy import *
+# ... 制作一些音频剪辑 aclip1, aclip2, aclip3
+concat = concatenate_audioclips([aclip1, aclip2, aclip3])
+compo = CompositeAudioClip([
+    aclip1.multiply_volume(1.2), # 增加音量
+    aclip2.with_start(5), # 从 t=5s 开始
+    aclip3.with_start(9) # 从 t=9s 开始
+])
+``` 
+
+这样可以根据需要自定义合成音频剪辑，以便满足特定的需求。
