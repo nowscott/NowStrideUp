@@ -592,7 +592,8 @@ videoclip2 = videoclip.with_audio(my_audioclip)
 ### 视频剪辑
 ```python
 clip = VideoClip(make_frame, duration=4)  # 用于自定义动画
-clip = VideoFileClip("my_video_file.mp4")  # 可为.mp4、.avi、.webm、.gif等格式
+clip = VideoFileClip("my_video_file.mp4")  
+# 可为.mp4、.avi、.webm、.gif等格式
 clip = ImageSequenceClip(['image_file1.jpeg', ...], fps=24)
 clip = ImageClip("my_picture.png")  # 可为.png、.jpeg、.tiff等格式
 clip = TextClip("Hello!", font="Amiri-Bold", fontsize=70, color="black")
@@ -601,7 +602,8 @@ clip = ColorClip(size=(460,380), color=[R,G,B])
 
 ### 音频剪辑
 ```python
-clip = AudioFileClip("my_audiofile.mp3")  # 可为.mp3、.ogg、.wav等格式，或视频
+clip = AudioFileClip("my_audiofile.mp3")  
+# 可为.mp3、.ogg、.wav等格式，或视频
 clip = AudioArrayClip(numpy_array, fps=44100)  # 来自数字数组
 clip = AudioClip(make_frame, duration=3)  # 使用函数 make_frame(t)
 ```
@@ -611,3 +613,45 @@ clip = AudioClip(make_frame, duration=3)  # 使用函数 make_frame(t)
 ### 视频剪辑的类别
 
 视频剪辑是较长视频的基石。从技术上讲，它们是具有 clip.get_frame(t) 方法的剪辑，该方法输出表示时间 t 的剪辑帧的 HxWx3 numpy 数组。主要有两类：动画剪辑（由 VideoFileClip 和 VideoClip 制作）和非动画剪辑，这些剪辑显示相同的图片，理论上持续时间无限长（如 ImageClip、TextClip、ColorClip）。还有特殊的视频剪辑称为遮罩剪辑，属于上述类别，但输出灰度帧，显示另一个剪辑的哪些部分可见或不可见。视频剪辑可以携带音频剪辑（其音轨）和遮罩剪辑。
+### VideoClip 录像片段
+
+VideoClip 是 MoviePy 中所有其他视频剪辑的基类。如果您的目的仅是编辑视频文件，则不需要使用这个类。当您希望从另一个库生成的帧制作动画时，这个类非常有用。您需要定义一个函数 `make_frame(t)`，它返回一个 HxWx3 的 numpy 数组（8 位整数），代表时间 t 的帧。下面是使用图形库 Gizeh 的一个示例：
+
+```python
+import gizeh
+import moviepy.editor as mpy
+
+WIDTH, HEIGHT = (128, 128)
+
+def make_frame(t):
+    surface = gizeh.Surface(WIDTH, HEIGHT)
+    radius = WIDTH * (1 + (t * (2 - t)) ** 2) / 6  # 半径随时间变化
+    circle = gizeh.circle(radius, xy=(64, 64), fill=(1, 0, 0))
+    circle.draw(surface)
+    return surface.get_npimage()  # 返回一个8位RGB数组
+
+clip = mpy.VideoClip(make_frame, duration=2)  # 持续2秒
+clip.write_gif("circle.gif", fps=15)
+```
+![[circle.gif]]
+请注意，使用 `make_frame` 创建的剪辑没有明确的帧速率，因此在使用 `write_gif` 和 `write_videofile` 以及任何需要遍历帧的方法时，您必须提供帧速率（fps，每秒帧数）。
+### VideoFileClip 视频文件剪辑
+
+VideoFileClip 是从视频文件（支持大多数格式）或 GIF 文件读取的剪辑。加载视频的方式如下：
+
+```python
+myclip = VideoFileClip("some_video.avi")
+myclip = VideoFileClip("some_animation.gif")
+```
+
+请注意，这些剪辑将具有 fps（每秒帧数）属性，如果您对剪辑进行小的修改，该属性将被传递，并且默认会在 `write_videofile`、`write_gif` 等方法中使用。例如：
+
+```python
+myclip = VideoFileClip("some_video.avi")
+print(myclip.fps)  # 例如打印 '30'
+# 现在在 t=10 到 25 秒之间剪切剪辑。这将保留 fps。
+myclip2 = myclip.subclip(10, 25)
+myclip2.write_gif("test.gif")  # 这个 gif 将有 30 fps
+```
+
+有关更多信息，请参阅 [`VideoFileClip`]()
