@@ -14,3 +14,11 @@ Movie是一个视频编辑的python模块，可用于视频剪切、合并、标
 
 ![[演示效果.png]]
 ## 安装
+使用 pip 的方法：如果您安装了 `pip` ，只需在终端中输入此内容
+```bash
+$ (sudo) pip install moviepy
+```
+MoviePy 依赖于 Python 模块 NumPy、Imageio、Decorator 和 Proglog，这些模块将在 MoviePy 安装过程中自动安装。它应该适用于 Windows/macOS/Linux，使用 Python 3.6+。
+
+MoviePy依赖于FFMPEG软件来进行视频读写。您无需担心这一点，因为在您首次使用 MoviePy 时，ImageIO 应该会自动下载/安装 FFMPEG（需要几秒钟）
+
