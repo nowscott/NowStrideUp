@@ -58,7 +58,7 @@ MoviePy 的开发考虑了以下目标：
 
 对于限制：MoviePy（还）无法流式传输视频（从网络摄像头读取，或在远程机器上实时渲染视频），并且并不是真正为涉及电影的许多连续帧的视频处理而设计的（例如视频稳定，您'为此需要另一个软件）。如果您同时使用许多视频、音频和图像源（>100），您也可能会遇到内存问题，但这将在未来的版本中得到修复。
 
-#### 示例代码
+### 示例代码
 
 在典型的 MoviePy 脚本中，您加载视频或音频文件，修改它们，将它们放在一起，然后将最终结果写入新的视频文件。举个例子，让我们加载我上次假期的视频，降低音量，在前十秒的视频中央添加标题，并将结果写入文件中：
 
@@ -85,13 +85,13 @@ video = CompositeVideoClip([clip, txt_clip])
 video.write_videofile("myHolidays_edited.webm")
 ```
 
-#### MoviePy 的工作原理
+### MoviePy 的工作原理
 
 MoviePy 使用软件 ffmpeg 来读取和导出视频和音频文件。它还（可选）使用 ImageMagick 生成文本并写入 GIF 文件。Python 的快速数值库 Numpy 确保了不同媒体的处理。高级效果和增强功能使用 Python 的众多图像处理库（PIL、Scikit-image、scipy 等）中的一些。
 
 ![[工作原理.jpg]]
 
-#### 基本概念
+### 基本概念
 
 MoviePy 的中心对象是剪辑，可以是 AudioClip 或 VideoClip。它们可以被修改（剪切、减速、加暗……），也可以与其他剪辑混合以形成新的剪辑。您可以预览这些剪辑（使用 PyGame 或 IPython Notebook），并将它们渲染到文件中（如 MP4、GIF、MP3 等格式）。例如，VideoClip 可以由视频文件、图像、文本或自定义动画创建。它们可以具有音轨（即 AudioClip）和遮罩（一种特殊的 VideoClip，指示混合其他剪辑时应该隐藏的剪辑部分）。有关更多详细信息，请参阅创建和导出视频剪辑以及混合剪辑。
 
@@ -101,7 +101,7 @@ MoviePy 的中心对象是剪辑，可以是 AudioClip 或 VideoClip。它们可
 
 最后，虽然 MoviePy 没有图形用户界面，但有许多预览剪辑的方法，使您能够在以高质量渲染视频之前微调脚本并确保一切完美。[请参阅如何高效使用 MoviePy。]()
 
-### 混合剪辑
+## 混合剪辑
 
 视频合成，也称为非线性编辑，是将多个剪辑组合在一起形成新的剪辑的过程。以下视频是使用 MoviePy 进行合成的一个很好的示例：
 
@@ -109,7 +109,7 @@ MoviePy 的中心对象是剪辑，可以是 AudioClip 或 VideoClip。它们可
 
 在开始之前，请注意，视频剪辑通常包含音轨和遮罩，它们也是剪辑。当您将这些剪辑组合在一起时，最终剪辑的音轨和遮罩会自动根据各个剪辑的音轨和遮罩生成。因此，大多数情况下，您无需担心混合音频和遮罩的问题。
 
-#### 堆叠和连接剪辑
+### 堆叠和连接剪辑
 
 将剪辑放在一起的两种简单方法是连接它们（在一个长剪辑中一个接一个地播放它们）或堆叠它们（在一个较大的剪辑中将它们并排播放）。
 
@@ -148,7 +148,7 @@ final_clip.resize(width=480).write_videofile("my_stack.mp4")
 
 ![[剪辑效果展示.jpg]]
 
-#### 复合视频剪辑
+### 复合视频剪辑
 
 复合视频剪辑提供了一种非常灵活的方式来组合剪辑，但比 concatenate_videoclips 和 clips_array 更复杂。
 
@@ -162,7 +162,7 @@ video = CompositeVideoClip([clip1, clip2, clip3])
 video = CompositeVideoClip([clip1, clip2, clip3], size=(720, 460))
 ```
 
-##### 开始和停止时间
+#### 开始和停止时间
 
 在 CompositionClip 中，所有剪辑都在 clip.start 属性指定的时间开始播放。您可以按如下方式设置此开始时间：
 
@@ -189,7 +189,7 @@ video = CompositeVideoClip([
     clip3.with_start(9).crossfadein(1.5) # 从 t=9s 开始并淡入1.5秒
 ])
 ``` 
-##### 设置剪辑位置
+#### 设置剪辑位置
 
 如果 clip2 和 clip3 小于 clip1，您可以通过设置它们的位置来决定它们在合成中的显示位置。这里我们指定剪辑左上角像素的坐标：
 
@@ -225,7 +225,7 @@ clip2.with_position(lambda t: ('center', 50+t) )
 
 ![[坐标示意图.jpg]]
 
-##### 合成音频剪辑​​
+#### 合成音频剪辑​​
 当您将视频剪辑混合在一起时，MoviePy 会自动合成它们各自的音轨以形成最终剪辑的音轨，因此您无需担心自己合成这些音轨。
 
 如果您想从多个音频源制作自定义音轨：音频剪辑可以使用 CompositeAudioClip 和 concatenate_audioclips 混合在一起：
@@ -243,7 +243,7 @@ compo = CompositeAudioClip([
 
 这样可以根据需要自定义合成音频剪辑，以便满足特定的需求。
 
-### 剪辑变换和效果
+## 剪辑变换和效果
 MoviePy 中的剪辑修改有几类：
 
 1. **常见方法**：用于更改剪辑属性的常见方法，如 `clip.with_duration`、`clip.with_audio`、`clip.with_mask`、`clip.with_start` 等。
