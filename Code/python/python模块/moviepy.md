@@ -22,3 +22,4 @@ MoviePy 依赖于 Python 模块 NumPy、Imageio、Decorator 和 Proglog，这些
 
 MoviePy依赖于FFMPEG软件来进行视频读写。您无需担心这一点，因为在您首次使用 MoviePy 时，ImageIO 应该会自动下载/安装 FFMPEG（需要几秒钟）
 
+## MoviePy 入门
