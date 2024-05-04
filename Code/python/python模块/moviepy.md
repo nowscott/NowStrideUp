@@ -613,6 +613,7 @@ clip = AudioClip(make_frame, duration=3)  # 使用函数 make_frame(t)
 ### 视频剪辑的类别
 
 视频剪辑是较长视频的基石。从技术上讲，它们是具有 clip.get_frame(t) 方法的剪辑，该方法输出表示时间 t 的剪辑帧的 HxWx3 numpy 数组。主要有两类：动画剪辑（由 VideoFileClip 和 VideoClip 制作）和非动画剪辑，这些剪辑显示相同的图片，理论上持续时间无限长（如 ImageClip、TextClip、ColorClip）。还有特殊的视频剪辑称为遮罩剪辑，属于上述类别，但输出灰度帧，显示另一个剪辑的哪些部分可见或不可见。视频剪辑可以携带音频剪辑（其音轨）和遮罩剪辑。
+
 ### VideoClip录像片段
 
 VideoClip 是 MoviePy 中所有其他视频剪辑的基类。如果您的目的仅是编辑视频文件，则不需要使用这个类。当您希望从另一个库生成的帧制作动画时，这个类非常有用。您需要定义一个函数 `make_frame(t)`，它返回一个 HxWx3 的 numpy 数组（8 位整数），代表时间 t 的帧。下面是使用图形库 Gizeh 的一个示例：
@@ -633,8 +634,11 @@ def make_frame(t):
 clip = mpy.VideoClip(make_frame, duration=2)  # 持续2秒
 clip.write_gif("circle.gif", fps=15)
 ```
+
 ![[circle.gif]]
+
 请注意，使用 `make_frame` 创建的剪辑没有明确的帧速率，因此在使用 `write_gif` 和 `write_videofile` 以及任何需要遍历帧的方法时，您必须提供帧速率（fps，每秒帧数）。
+
 ### VideoFileClip视频文件剪辑
 
 VideoFileClip 是从视频文件（支持大多数格式）或 GIF 文件读取的剪辑。加载视频的方式如下：
@@ -756,3 +760,27 @@ my_clip = ImageClip("flower.jpeg")  # 默认无限持续时间
 my_clip.write_videofile("flower.mp4")  # 会失败！没有设置持续时间！
 my_clip.with_duration(5).write_videofile("flower.mp4")  # 成功！
 ```
+### GIF 动画
+
+要将视频编写为动画 GIF，可以使用以下命令：
+
+```python
+my_clip.write_gif('test.gif', fps=12)
+```
+
+请注意，这需要安装 ImageMagick。如果没有安装，您也可以通过添加选项 `program='ffmpeg'` 使用 ffmpeg 来创建 GIF，这会更快，但效果可能不如 ImageMagick 优化得好。
+
+编写 GIF 时，有多种选项可以优化 GIF 的质量和大小。更多详细信息，请参阅 [`write_gif()`](https://moviepy.readthedocs.io/en/latest/ref/VideoClip/VideoClip.html#moviepy.video.VideoClip.VideoClip.write_gif)。
+
+编辑 GIF 的最佳方式是在笔记本中预览它们，具体方法请参考 `ipython_display`。您可以查看相关博客文章，了解如何从视频文件制作 GIF，以及如何制作带有矢量图形的 GIF 动画。
+
+### 导出图像
+
+您可以将帧写入图像文件，如下所示：
+
+```python
+myclip.save_frame("frame.png")  # 默认提取第一帧
+myclip.save_frame("frame.jpeg", t='01:00:00')  # 在时间 t=1 小时的帧
+```
+
+如果剪辑包含蒙版，蒙版将作为图像的 Alpha 层被导出，除非您指定 `with_mask=False`。
