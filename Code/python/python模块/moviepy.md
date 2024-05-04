@@ -226,6 +226,7 @@ clip2.with_position(lambda t: ('center', 50+t) )
 ![[坐标示意图.jpg]]
 
 #### 合成音频剪辑​​
+
 当您将视频剪辑混合在一起时，MoviePy 会自动合成它们各自的音轨以形成最终剪辑的音轨，因此您无需担心自己合成这些音轨。
 
 如果您想从多个音频源制作自定义音轨：音频剪辑可以使用 CompositeAudioClip 和 concatenate_audioclips 混合在一起：
@@ -244,12 +245,11 @@ compo = CompositeAudioClip([
 这样可以根据需要自定义合成音频剪辑，以便满足特定的需求。
 
 ## 剪辑变换和效果
+
 MoviePy 中的剪辑修改有几类：
 
 1. **常见方法**：用于更改剪辑属性的常见方法，如 `clip.with_duration`、`clip.with_audio`、`clip.with_mask`、`clip.with_start` 等。
-
 2. **已经实现的效果**：核心效果（如 `clip.subclip(t1, t2)`，保留 t1 和 t2 之间的剪辑）作为类方法实现。更高级和不太常见的效果（如 `loop`，使剪辑循环播放，或 `time_mirror`，使剪辑向后播放）放置在特殊模块 `moviepy.video.fx` 和 `moviepy.audio.fx` 中，并通过 `clip.fx` 方法应用。例如 `clip.fx(time_mirror)`（使剪辑向后播放）、`clip.fx(black_white)`（将剪辑转换为黑白），等等。
-
 3. **您可以自己创造的效果**：您可以创建自定义效果，使用 `fx` 方法。
 
 所有这些效果都具有一个共同点，即它们不是就地修改：它们不会修改原始剪辑，而是创建一个新剪辑，该剪辑是对前一个剪辑应用了更改的版本。例如：
@@ -261,3 +261,98 @@ my_new_clip = my_clip.with_start(t=5) # 好的！
 ```
 
 另外，当您编写 `clip.resize(width=640)` 时，它不会立即将效果应用于剪辑的所有帧，而是仅应用于第一帧：所有其他帧只会在需要时（即当您将整个剪辑写入文件或预览时）进行调整大小。换句话说，创建新剪辑既不耗费时间也不耗费内存，所有计算都在最终渲染期间发生。
+
+### MoviePy 中的时间表示
+
+在 MoviePy 中，许多方法都接受时间作为参数。例如 `clip.subclip(t_start, t_end)` 方法可以在两个时间点之间剪切剪辑。对于这些方法，时间可以用秒表示（例如 `t_start=230.54`），也可以用一对（分钟、秒）表示（例如 `t_start=(3,50.54)`），或者用三元组（小时、分钟、秒）表示（例如 `t_start=(0,3,50.54)`），还可以用字符串表示（例如 `t_start='00:03:50.54'`）。
+
+大多数情况下，如果未提供时间，MoviePy 会自动猜测。例如在 `clip.subclip(t_start=50)` 中，暗示着 `t_end` 对应于剪辑的结尾；在 `clip.subclip(t_end=20)` 中，暗示着 `t_start` 为 0。如果时间为负数，它被视为相对于剪辑结束的时间。例如，`clip.subclip(-20, -10)` 剪切的是距离剪辑结束前 20 秒到剪辑结束前 10 秒之间的部分。
+
+### 更改剪辑属性的方法
+
+假设您有一些函数实现了对剪辑的效果，即给定一个剪辑和一些参数，返回一个新剪辑：
+
+```python
+effect_1(clip, args1) -> new clip
+effect_2(clip, args2) -> new clip
+effect_3(clip, args3) -> new clip
+```
+
+其中 args 代表参数和/或关键字参数。要按顺序将这些函数应用于一个剪辑，您可能会编写类似于以下代码：
+
+```python
+newclip =  effect_3( effect_2( effect_1(clip, args3), args2), args1)
+```
+
+但这种方式不易阅读。为了更清晰的语法，您可以使用 `clip.fx`：
+
+```python
+newclip = (clip.fx(effect_1, args1)
+               .fx(effect_2, args2)
+               .fx(effect_3, args3))
+```
+
+好多了！在 moviepy.video.fx 和 moviepy.audio.fx 模块中已经实现了许多效果。如果相关，这些模块中的 fx 方法将自动应用于剪辑的声音和遮罩，这样您就不必担心修改它们。为了方便起见，这两个模块被加载为 vfx 和 afx，因此您可以这样写：
+
+```python
+from moviepy import *
+clip = (VideoFileClip("myvideo.avi")
+        .fx(vfx.resize, width=460)  # 调整大小（保持宽高比）
+        .fx(vfx.multiply_speed, 2)  # 加倍速度
+        .fx(vfx.multiply_color, 0.5))  # 变暗图像
+```
+
+为了方便使用，诸如 resize 之类的 fx 方法可以以更简单的方式调用：`clip.resize(...)` 而不是 `clip.fx(vfx.resize, ...)`。
+
+### 创建自定义效果的方法
+
+您可以使用自定义过滤器通过 clip.time_transform、clip.image_transform 等方式修改剪辑。
+
+使用 clip.time_transform，您可以修改剪辑的时间线，例如：
+
+```python
+modifiedClip1 = my_clip.time_transform(lambda t: 3*t)
+modifiedClip2 = my_clip.time_transform(lambda t: 1+sin(t))
+```
+
+现在，修改后的剪辑 modifiedClip1 的播放速度是原始剪辑的三倍，而 modifiedClip2 将在时间 t=0s 和 t=2s 之间振荡播放。需要注意的是，在最后一种情况下，您创建了一个持续时间无限的剪辑（目前这不是问题）。
+
+使用 clip.image_transform，您可以修改剪辑的显示方式，例如：
+
+```python
+def invert_green_blue(image):
+    return image[:,:,[0,2,1]]
+
+modifiedClip = my_clip.image_transform(invert_green_blue)
+```
+
+最后，您可能希望同时考虑时间和帧图片来处理剪辑。这可以通过 clip.transform(filter) 方法实现。filter 必须是一个接受两个参数并返回图片的函数。第一个参数是 get_frame 方法（即给定时间的函数 gf(t) 返回该时间的剪辑帧），第二个参数是时间。例如：
+
+```python
+def scroll(get_frame, t):
+    """
+    This function returns a 'region' of the current frame.
+    The position of this region depends on the time.
+    """
+    frame = get_frame(t)
+    frame_region = frame[int(t):int(t)+360,:]
+    return frame_region
+
+modifiedClip = my_clip.transform(scroll)
+```
+
+这将使剪辑向下滚动，高度恒定为 360 像素。
+
+在编写新效果时，尽可能使用 time_transform 和 image_transform 而不是 transform。这样做的原因是，当这些效果应用于 ImageClip 时，MoviePy 将意识到这些方法不需要应用于每一帧，这将导致更快的渲染。
+
+## 如何高效使用 MoviePy
+
+使用 MoviePy 的最佳方式是与 IPython Notebook 结合使用：它使得预览剪辑更加容易（正如我们将在本节中看到的），具有自动补全功能，并且可以显示库的不同方法的文档。
+
+### 应该使用 moviepy.editor 吗？
+
+在 MoviePy 的旧版本中，通常建议从 moviepy.editor 中导入。但在 v2.0 及以上版本中，不再建议这样做，您应该通常直接从 moviepy 中导入（例如，from moviepy import VideoFileClip）。现在，只有在您使用 MoviePy 手动编辑视频时才应加载 moviepy.editor 模块。导入它将：
+
+- 如果安装了 pygame，则启动 pygame 会话以启用 clip.show() 和 clip.preview()
+- 如果在 IPython Notebook 中，则启用 clip.ipython_display()
+- 如果安装了 Matplotlib，则启用 sliders()
