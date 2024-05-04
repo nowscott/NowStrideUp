@@ -99,4 +99,51 @@ MoviePy 的中心对象是剪辑，可以是 AudioClip 或 VideoClip。它们可
 
 此外，您还可以在 moviepy.video.tools 中找到一些高级功能，用于在视频中跟踪对象、绘制简单形状和颜色渐变（对于遮罩非常有用）、生成字幕和片尾字幕等。有关这些功能的描述，请参阅高级工具。
 
-最后，虽然 MoviePy 没有图形用户界面，但有许多预览剪辑的方法，使您能够在以高质量渲染视频之前微调脚本并确保一切完美。请参阅如何高效使用 MoviePy。
+最后，虽然 MoviePy 没有图形用户界面，但有许多预览剪辑的方法，使您能够在以高质量渲染视频之前微调脚本并确保一切完美。[请参阅如何高效使用 MoviePy。]()
+
+### 混合剪辑
+
+视频合成，也称为非线性编辑，是将多个剪辑组合在一起形成新的剪辑的过程。以下视频是使用 MoviePy 进行合成的一个很好的示例：
+
+[视频链接](https://www.youtube.com/watch?v=rIehsqqYFEM)
+
+在开始之前，请注意，视频剪辑通常包含音轨和遮罩，它们也是剪辑。当您将这些剪辑组合在一起时，最终剪辑的音轨和遮罩会自动根据各个剪辑的音轨和遮罩生成。因此，大多数情况下，您无需担心混合音频和遮罩的问题。
+
+#### 堆叠和连接剪辑
+
+将剪辑放在一起的两种简单方法是连接它们（在一个长剪辑中一个接一个地播放它们）或堆叠它们（在一个较大的剪辑中将它们并排播放）。
+
+连接是通过函数 concatenate_videoclips 完成的：
+
+```python
+from moviepy import VideoFileClip, concatenate_videoclips
+
+clip1 = VideoFileClip("myvideo.mp4")
+clip2 = VideoFileClip("myvideo2.mp4").subclip(50,60)
+clip3 = VideoFileClip("myvideo3.mp4")
+
+final_clip = concatenate_videoclips([clip1,clip2,clip3])
+final_clip.write_videofile("my_concatenation.mp4")
+```
+
+final_clip 是一个剪辑，依次播放剪辑 1、2 和 3。请注意，剪辑不需要具有相同的尺寸。如果它们尺寸不同，它们将全部居中显示在一个足够大的剪辑中，以包含其中最大的一个，还可以选择填充边框的颜色。您还有许多其他选项（请参阅该函数的文档）。例如，您可以使用选项 transition=my_clip 在剪辑之间播放过渡剪辑。
+
+堆叠是通过 clips_array 完成的：
+
+```python
+from moviepy import VideoFileClip, clips_array, vfx
+
+clip1 = VideoFileClip("myvideo.mp4").margin(10) # 添加 10 像素的边框
+clip2 = clip1.fx( vfx.mirror_x)
+clip3 = clip1.fx( vfx.mirror_y)
+clip4 = clip1.resize(0.60) # 缩小 60%
+
+final_clip = clips_array([[clip1, clip2],
+                          [clip3, clip4]])
+
+final_clip.resize(width=480).write_videofile("my_stack.mp4")
+```
+
+您将获得一个类似以下的剪辑：
+
+![[剪辑效果展示.jpg]]
