@@ -2,13 +2,13 @@
 createDate: 2024-04-30 22:33
 tags: [模块, python]
 ---
-## 引言
+# 引言
 
 最近我开始学习如何使用 MoviePy 这个库，并打算写一篇介绍性的文章。
 
 本文的内容主要来源于：[MoviePy官方文档](https://moviepy.readthedocs.io/en/latest/)
 
-## 简介
+# 简介
 
 MoviePy 是一个用于视频编辑的 Python 模块，可用于视频剪切、合并、插入标题、视频合成、视频处理或创建高级效果。它能够读取和写入常见的视频格式，包括 GIF。
 
@@ -16,7 +16,7 @@ MoviePy 是一个用于视频编辑的 Python 模块，可用于视频剪切、�
 
 ![[演示效果.png]]
 
-## 安装
+# 安装
 
 使用 pip 安装 MoviePy 非常简单。如果您已经安装了 `pip`，只需在终端中输入以下命令：
 
@@ -28,13 +28,13 @@ MoviePy 依赖于 Python 模块 NumPy、Imageio、Decorator 和 Proglog。这些
 
 MoviePy 还依赖于 FFMPEG 软件来进行视频读写。您无需担心这一点，因为在首次使用 MoviePy 时，ImageIO 应该会自动下载/安装 FFMPEG（这个过程只需要几秒钟）。
 
-## MoviePy 入门
+# MoviePy 入门
 
 以下部分展示了开始使用 MoviePy 进行编辑所需的一切
 
-### 快速演示
+## 快速演示
 
-#### 你是否需要 MoviePy？
+### 你是否需要 MoviePy？
 
 以下是您可能需要使用 Python 编辑视频的几个原因：
 
@@ -48,7 +48,7 @@ MoviePy 还依赖于 FFMPEG 软件来进行视频读写。您无需担心这一�
 
 - 您只需要进行逐帧视频分析（使用面部检测或其他奇特的东西）。这可以通过 MoviePy 与其他库结合来完成，但实际上，只需使用 imageio、OpenCV 或 SimpleCV，这些是专门从事这些任务的库。
 - 您只想转换视频文件，或将一系列图像文件转换为电影。在这种情况下，最好直接调用 ffmpeg （或 avconv 或 mencoder ...），它会比通过 MoviePy 更快、更节省内存。
-#### 优点和局限性
+### 优点和局限性
 
 MoviePy 的开发考虑了以下目标：
 
