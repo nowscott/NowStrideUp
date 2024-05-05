@@ -105,6 +105,8 @@ createDate: 2024-04-11 11:24
     - leetcode
       - [5. 最长回文子串.md](Code/%E5%88%B7%E9%A2%98/leetcode/5.%20%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2.md)
   - python
+    - 数据分析
+      - [【python数据分析】01-准备工作.md](Code/python/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E3%80%90python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E3%80%9101-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C.md)
     - python模块
       - [sys.md](Code/python/python%E6%A8%A1%E5%9D%97/sys.md)
       - [re.md](Code/python/python%E6%A8%A1%E5%9D%97/re.md)
