@@ -144,8 +144,7 @@
       "daily-notes:打开/创建今天的日记": true,
       "templates:插入模板": false,
       "command-palette:打开命令面板": true,
-      "obsidian-regex-pipeline:Regex Rulesets": true,
-      "hidden-folder-obsidian:显示文件夹": false
+      "obsidian-regex-pipeline:Regex Rulesets": true
     }
   },
   "active": "f1b84252a98f4b38",
